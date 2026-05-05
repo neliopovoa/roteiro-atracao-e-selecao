@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Roteiro de Atração e Seleção — Faculdade Belavista</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f7f7f8;
+  --ink: #1A1714;
+  --ink-muted: #6B6760;
+  --ink-light: #A8A49F;
+  --surface: #fff;
+  --brand-purple: #511865;
+  --brand-purple-soft: #f4ebf7;
+  --brand-purple-hover: #6b2388;
+  --border: rgba(0,0,0,.08);
+  --border-strong: rgba(0,0,0,.14);
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow-sm: 0 1px 6px rgba(0,0,0,.05);
+  --shadow-md: 0 4px 14px rgba(0,0,0,.09);
+  --shadow-lg: 0 8px 32px rgba(81,24,101,.18);
+}
+
+html, body {
+  background: var(--bg);
+  font-family: 'Nunito Sans', sans-serif;
+  color: var(--ink);
+  line-height: 1.6;
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+body { min-height: 100vh; }
+
+.layout { display: grid; grid-template-columns: 280px 1fr; min-height: 100vh; }
+
+.sidebar {
+  position: sticky; top: 0; height: 100vh;
+  background: var(--bg-soft); border-right: 1px solid var(--border);
+  padding: 28px 0; overflow-y: auto;
+}
+.sidebar-header {
+  padding: 0 24px 20px; border-bottom: 1px solid var(--border); margin-bottom: 16px;
+}
+.sidebar-header img.logo-img { height: 38px; width: auto; display: block; margin-bottom: 14px; }
+.sidebar-header .eyebrow {
+  font-size: 10px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--ink-light); margin-bottom: 4px;
+}
+.sidebar-header h1 {
+  font-size: 19px; font-weight: 800; line-height: 1.2; color: var(--brand-purple);
+  letter-spacing: -.01em;
+}
+.sidebar nav ul { list-style: none; }
+.sidebar nav li a {
+  display: block; padding: 9px 24px; font-size: 13px; font-weight: 600;
+  color: var(--ink-muted); text-decoration: none; border-left: 3px solid transparent;
+  transition: background .12s, color .12s, border-color .12s;
+}
+.sidebar nav li a:hover { background: rgba(81,24,101,.05); color: var(--brand-purple); }
+.sidebar nav li a.active {
+  background: var(--brand-purple-soft); color: var(--brand-purple);
+  border-left-color: var(--brand-purple);
+}
+.sidebar nav li.nav-divider { height: 1px; background: var(--border); margin: 14px 24px; }
+.sidebar nav li.nav-section-title {
+  padding: 14px 24px 6px; font-size: 9px; font-weight: 800;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-light);
+}
+
+.main { padding: 56px 64px 96px; max-width: 920px; margin: 0; }
+.main section { padding-top: 24px; margin-bottom: 48px; scroll-margin-top: 24px; }
+.main section:first-child { padding-top: 0; }
+.main h2 {
+  font-size: 30px; font-weight: 800; color: var(--brand-purple);
+  letter-spacing: -.02em; line-height: 1.15; margin-bottom: 20px;
+  padding-bottom: 14px; border-bottom: 2px solid var(--brand-purple-soft);
+}
+.main h3 {
+  font-size: 17px; font-weight: 800; color: var(--ink);
+  margin: 28px 0 10px; letter-spacing: -.005em;
+}
+.main p { margin-bottom: 14px; color: var(--ink); }
+.main p.lead { font-size: 17px; line-height: 1.55; margin-bottom: 20px; font-weight: 400; }
+.main a {
+  color: var(--brand-purple); font-weight: 600;
+  text-decoration: underline; text-decoration-color: rgba(81,24,101,.3);
+  text-underline-offset: 3px;
+}
+.main a:hover { text-decoration-color: var(--brand-purple); }
+.main strong { color: var(--ink); font-weight: 700; }
+.main em { font-style: italic; color: var(--ink-muted); }
+.main code {
+  background: var(--bg-soft); padding: 2px 7px; border-radius: 4px;
+  font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 13px;
+  color: var(--brand-purple); border: 1px solid var(--border);
+}
+.main ol, .main ul { margin: 4px 0 14px 24px; padding: 0; }
+.main ol li, .main ul li { margin-bottom: 6px; padding-left: 4px; }
+
+.info-box {
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+  border-left: 3px solid var(--brand-purple);
+  padding: 14px 18px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin: 18px 0; font-size: 14px;
+}
+.info-box strong { color: var(--brand-purple); }
+.info-box p { margin: 6px 0 0; }
+.info-box ul { margin: 6px 0 0 22px; padding: 0; }
+.info-box li { margin-bottom: 4px; }
+.info-box .placeholder {
+  background: var(--bg-soft); padding: 1px 8px; border-radius: 4px;
+  color: var(--ink-muted); font-style: italic; border: 1px dashed var(--border-strong);
+}
+
+.fluxo { display: flex; flex-direction: column; gap: 14px; margin: 18px 0 26px; }
+.fluxo-passo {
+  display: flex; gap: 16px; align-items: flex-start;
+  background: var(--bg-soft); padding: 16px 20px; border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+.fluxo-num {
+  width: 32px; height: 32px; flex-shrink: 0;
+  background: var(--brand-purple); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; font-weight: 800; font-size: 14px;
+}
+.fluxo-texto strong {
+  display: block; color: var(--ink); font-size: 15px;
+  font-weight: 800; margin-bottom: 2px;
+}
+.fluxo-texto p { margin: 0; font-size: 14px; color: var(--ink-muted); }
+
+.tabela { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 14px; }
+.tabela th {
+  text-align: left; padding: 10px 14px; background: var(--brand-purple-soft);
+  color: var(--brand-purple); font-weight: 800;
+  border-bottom: 2px solid var(--brand-purple); font-size: 12px;
+  text-transform: uppercase; letter-spacing: .04em;
+}
+.tabela td {
+  padding: 11px 14px; border-bottom: 1px solid var(--border); vertical-align: top;
+}
+.tabela tr:last-child td { border-bottom: none; }
+.tabela tr:hover td { background: var(--bg-soft); }
+.tabela-acessos td .placeholder {
+  background: #fff; padding: 2px 8px; border-radius: 4px;
+  color: var(--ink-muted); font-style: italic; border: 1px dashed var(--border-strong);
+  font-size: 13px;
+}
+
+.estrutura-pastas {
+  background: var(--bg-soft); padding: 16px 20px; border-radius: var(--radius-sm);
+  font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 13px;
+  line-height: 1.7; color: var(--ink); border: 1px solid var(--border);
+  margin: 12px 0 22px; white-space: pre-wrap; word-break: break-word;
+}
+
+.placeholder-paragrafo {
+  color: var(--ink-light); font-style: italic;
+  background: var(--bg-soft); padding: 10px 16px; border-radius: var(--radius-sm);
+  border: 1px dashed var(--border-strong);
+}
+
+/* IMAGENS DO MANUAL DO BOOKINGS */
+.manual-img {
+  margin: 22px 0;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.manual-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: #fff;
+}
+.manual-img-legenda {
+  margin: 12px 0 0 !important;
+  font-size: 13px;
+  color: var(--ink-muted);
+  line-height: 1.5;
+  padding: 0 4px;
+}
+.manual-img-legenda strong {
+  color: var(--brand-purple);
+  font-weight: 800;
+}
+.manual-img-legenda em {
+  font-style: italic;
+  color: var(--ink);
+}
+
+/* MODELOS DE E-MAIL */
+.emails-toolbar {
+  display: flex; gap: 14px; align-items: center; margin: 14px 0 22px;
+  padding: 12px 16px; background: var(--bg-soft);
+  border-radius: var(--radius-sm); border: 1px solid var(--border);
+}
+.busca-input {
+  flex: 1; padding: 8px 12px; border: 1px solid var(--border-strong);
+  border-radius: 7px; font-family: inherit; font-size: 13px;
+  background: #fff; color: var(--ink); outline: none;
+  transition: border-color .15s;
+}
+.busca-input:focus { border-color: var(--brand-purple); }
+.emails-contador {
+  font-size: 11px; font-weight: 800; color: var(--brand-purple);
+  background: var(--brand-purple-soft); padding: 4px 10px; border-radius: 20px;
+  letter-spacing: .04em;
+}
+
+.email-card {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: var(--radius); margin-bottom: 18px; overflow: hidden;
+  transition: box-shadow .15s, border-color .15s;
+}
+.email-card:hover { box-shadow: var(--shadow-md); border-color: var(--border-strong); }
+.email-card.hidden { display: none; }
+
+.email-header {
+  padding: 16px 20px; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  border-bottom: 1px solid transparent;
+  transition: background .12s, border-color .12s;
+}
+.email-card.aberto .email-header {
+  background: var(--brand-purple-soft); border-bottom-color: var(--border);
+}
+.email-header:hover { background: var(--bg-soft); }
+.email-card.aberto .email-header:hover { background: var(--brand-purple-soft); }
+.email-categoria {
+  font-size: 9px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--brand-purple); background: var(--brand-purple-soft);
+  padding: 4px 9px; border-radius: 20px; flex-shrink: 0;
+}
+.email-card.aberto .email-categoria { background: #fff; }
+.email-titulo {
+  flex: 1; font-size: 15px; font-weight: 800; color: var(--ink); line-height: 1.25;
+}
+.email-chevron {
+  width: 18px; height: 18px; flex-shrink: 0; color: var(--ink-muted);
+  transition: transform .25s;
+}
+.email-card.aberto .email-chevron { transform: rotate(180deg); }
+
+.email-body { display: none; padding: 20px; background: #fff; }
+.email-card.aberto .email-body { display: block; }
+
+.email-descricao { font-size: 13px; color: var(--ink-muted); margin-bottom: 16px; font-style: italic; }
+
+.email-section-title {
+  font-size: 10px; font-weight: 800; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--ink-light);
+  margin: 18px 0 8px;
+}
+.email-section-title:first-child { margin-top: 0; }
+
+.campos-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px; margin-bottom: 4px;
+}
+.campo-bloco { display: flex; flex-direction: column; gap: 4px; }
+.campo-bloco label { font-size: 11px; font-weight: 700; color: var(--ink-muted); }
+.campo-bloco input, .campo-bloco textarea {
+  padding: 8px 10px; border: 1px solid var(--border-strong);
+  border-radius: 6px; font-family: inherit; font-size: 13px;
+  background: #fff; color: var(--ink); outline: none;
+  transition: border-color .15s;
+}
+.campo-bloco textarea { min-height: 70px; resize: vertical; line-height: 1.5; }
+.campo-bloco input:focus, .campo-bloco textarea:focus { border-color: var(--brand-purple); }
+.campo-bloco.fullwidth { grid-column: 1 / -1; }
+
+.email-meta {
+  background: var(--bg-soft); padding: 10px 14px; border-radius: var(--radius-sm);
+  margin-bottom: 12px; font-size: 13px; border: 1px solid var(--border);
+}
+.email-meta-linha { margin-bottom: 4px; }
+.email-meta-linha:last-child { margin-bottom: 0; }
+.email-meta-label {
+  font-weight: 800; color: var(--ink-muted); margin-right: 8px;
+  font-size: 11px; text-transform: uppercase; letter-spacing: .04em;
+}
+.email-meta-valor { color: var(--ink); font-size: 13px; }
+
+/* PRÉ-VISUALIZAÇÃO DO E-MAIL FORMATADO */
+.email-preview-wrapper {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 24px 28px; margin-bottom: 12px;
+  box-shadow: var(--shadow-sm);
+}
+.email-preview-wrapper .var-empty {
+  background: #faece1; color: #854F0B; padding: 1px 6px; border-radius: 3px;
+  border: 1px dashed #BA7517; font-style: italic; font-size: 12px;
+}
+
+/* Estilos do e-mail formatado dentro da preview */
+.email-rendered {
+  font-family: "Avenir Next", Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+  color: rgb(68, 68, 68);
+  line-height: 1.5;
+}
+.email-rendered .er-saudacao {
+  font-size: 12pt; color: rgb(27, 58, 107); font-weight: 700; margin-bottom: 12px;
+}
+.email-rendered .er-paragrafo {
+  margin-bottom: 8px; color: rgb(68, 68, 68);
+}
+.email-rendered .er-paragrafo b { color: rgb(27, 58, 107); }
+.email-rendered .er-titulo {
+  font-size: 11.5pt; color: rgb(27, 58, 107); font-weight: 700;
+  margin: 14px 0 6px;
+}
+.email-rendered .er-etapa {
+  display: flex; margin-bottom: 6px; border-collapse: collapse;
+}
+.email-rendered .er-etapa-num {
+  display: flex; align-items: center; justify-content: center;
+  width: 36px; flex-shrink: 0;
+  color: white; font-weight: 700; font-size: 13pt;
+}
+.email-rendered .er-etapa-num.estado-padrao { background: rgb(27, 58, 107); }
+.email-rendered .er-etapa-num.estado-concluida { background: rgb(34, 116, 64); font-size: 14pt; }
+.email-rendered .er-etapa-num.estado-atual { background: rgb(27, 58, 107); }
+.email-rendered .er-etapa-num.estado-futura { background: rgb(140, 140, 140); }
+.email-rendered .er-etapa-corpo {
+  flex: 1; padding: 6pt 12px;
+}
+.email-rendered .er-etapa-corpo.estado-padrao { background: rgb(245, 247, 250); }
+.email-rendered .er-etapa-corpo.estado-concluida { background: rgb(232, 244, 234); }
+.email-rendered .er-etapa-corpo.estado-atual { background: rgb(238, 244, 252); }
+.email-rendered .er-etapa-corpo.estado-futura { background: rgb(245, 245, 245); }
+.email-rendered .er-etapa-titulo {
+  font-size: 10.5pt; font-weight: 700; margin-bottom: 2px;
+}
+.email-rendered .er-etapa-titulo.estado-padrao,
+.email-rendered .er-etapa-titulo.estado-atual { color: rgb(27, 58, 107); }
+.email-rendered .er-etapa-titulo.estado-concluida { color: rgb(34, 116, 64); }
+.email-rendered .er-etapa-titulo.estado-futura { color: rgb(102, 102, 102); }
+.email-rendered .er-etapa-desc { font-size: 10pt; line-height: 1.45; }
+.email-rendered .er-etapa-desc.estado-atual { color: rgb(27, 58, 107); }
+.email-rendered .er-etapa-desc.estado-concluida { color: rgb(34, 116, 64); }
+.email-rendered .er-etapa-desc.estado-futura { color: rgb(102, 102, 102); }
+
+.email-rendered .er-link-bookings {
+  background: rgb(238, 244, 252);
+  border: 1px solid rgb(197, 216, 240);
+  border-left: 3px solid rgb(27, 58, 107);
+  padding: 10px 16px; margin: 6px 0 8px;
+}
+.email-rendered .er-link-rotulo {
+  font-size: 10.5pt; font-weight: 700; color: rgb(27, 58, 107);
+}
+.email-rendered .er-link-arrow {
+  font-weight: 700; color: rgb(27, 58, 107); margin: 0 4px;
+}
+.email-rendered .er-link-anchor {
+  color: rgb(150, 96, 125); font-weight: 700; text-decoration: underline;
+}
+.email-rendered .er-link-fallback {
+  font-size: 9pt; color: rgb(102, 102, 102); margin-top: 4px;
+}
+.email-rendered .er-link-fallback i { font-style: italic; word-break: break-all; }
+
+.email-rendered .er-horarios {
+  background: rgb(245, 247, 250); padding: 10px 16px; margin: 6px 0 8px;
+  border-left: 3px solid rgb(27, 58, 107);
+}
+.email-rendered .er-horarios-rotulo {
+  font-size: 10.5pt; font-weight: 700; color: rgb(27, 58, 107);
+  margin-bottom: 4px;
+}
+.email-rendered .er-horarios-linha {
+  font-size: 10.5pt; line-height: 1.7; white-space: pre-wrap;
+}
+
+.email-rendered .er-horario-unico {
+  background: rgb(245, 247, 250); padding: 10px 16px; margin: 6px 0 8px;
+  border-left: 3px solid rgb(27, 58, 107);
+}
+.email-rendered .er-horario-unico-rotulo {
+  font-size: 10.5pt; font-weight: 700; color: rgb(27, 58, 107);
+}
+.email-rendered .er-horario-unico-valor {
+  font-size: 10.5pt; margin-top: 2px;
+}
+
+.email-rendered .er-assinatura { margin-top: 14px; }
+.email-rendered .er-assinatura b { color: black; font-size: 10pt; }
+
+.email-acoes {
+  display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px;
+}
+.btn {
+  padding: 9px 18px; border-radius: 7px; border: 1px solid var(--border-strong);
+  background: #fff; color: var(--ink); font-family: inherit;
+  font-size: 13px; font-weight: 700; cursor: pointer;
+  display: flex; align-items: center; gap: 6px;
+  transition: background .12s, border-color .12s, transform .1s;
+}
+.btn:hover { background: var(--bg-soft); border-color: var(--ink-muted); }
+.btn:active { transform: scale(.97); }
+.btn.btn-primary {
+  background: var(--brand-purple); color: #fff; border-color: var(--brand-purple);
+}
+.btn.btn-primary:hover { background: var(--brand-purple-hover); border-color: var(--brand-purple-hover); }
+.btn-feedback {
+  font-size: 12px; color: #0F6E56; font-weight: 700; margin-left: 8px;
+  align-self: center; opacity: 0; transition: opacity .2s;
+}
+.btn-feedback.visible { opacity: 1; }
+
+/* RODAPÉ */
+.rodape {
+  margin-top: 80px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--ink-light);
+  line-height: 1.6;
+}
+.rodape p { margin: 0 0 4px; color: var(--ink-light); }
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar {
+    position: relative; height: auto;
+    border-right: none; border-bottom: 1px solid var(--border);
+  }
+  .main { padding: 36px 24px 64px; }
+  .main h2 { font-size: 24px; }
+  .campos-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img class="logo-img" src="data:image/png;base64,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" alt="Faculdade Belavista" />
+      <div class="eyebrow">Pessoas e Cultura</div>
+      <h1>Roteiro de Atração e Seleção</h1>
+    </div>
+    <nav>
+      <ul>
+      <li><a href="#inicio" class="active">Início</a></li>
+      <li><a href="#visao-geral">Visão geral</a></li>
+      <li class="nav-section-title">Operação</li>
+      <li><a href="#abertura-vaga">Antes de abrir a vaga</a></li>
+      <li><a href="#divulgacao">Divulgação da vaga</a></li>
+      <li><a href="#recebimento">Recebimento de currículos</a></li>
+      <li><a href="#triagem">Triagem e respostas iniciais</a></li>
+      <li class="nav-section-title">Etapas do processo</li>
+      <li><a href="#entrevista-1">1ª entrevista (P&amp;C)</a></li>
+      <li><a href="#entrevista-2">2ª entrevista (técnica)</a></li>
+      <li><a href="#desafio">Etapa extra (desafio)</a></li>
+      <li><a href="#entrevista-3">3ª entrevista (presencial)</a></li>
+      <li><a href="#aprovacao">Aprovação final</a></li>
+      <li class="nav-section-title">Recursos</li>
+      <li><a href="#emails">Modelos de e-mail</a></li>
+      <li><a href="#bookings">Manual do Bookings</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main">
+<section id="inicio">
+  <h2>Início</h2>
+  <p class="lead">Este roteiro descreve, passo a passo, como conduzimos o processo de Atração e Seleção de pessoas na Faculdade Belavista. Pertence à dimensão <strong>Carreira e Jornada</strong> dentro de Pessoas e Cultura.</p>
+
+<p>O documento foi feito para que qualquer pessoa que assuma o processo seletivo, hoje ou no futuro, consiga conduzi-lo do começo ao fim consultando apenas estas páginas. Inclui o fluxo das três entrevistas, os canais de divulgação que usamos, a forma como organizamos currículos no Drive, os modelos editáveis dos e-mails enviados em cada etapa, e um esqueleto do manual do Microsoft Bookings que será preenchido depois.</p>
+
+<p>Use o menu à esquerda para navegar. Os modelos de e-mail estão na seção <a href="#emails">Modelos de e-mail</a>, com editor inline que preenche os campos e gera o e-mail formatado, idêntico ao layout que enviamos aos candidatos.</p>
+</section>
+
+<section id="visao-geral">
+  <h2>Visão geral do processo</h2>
+  <p>O processo seletivo da Faculdade Belavista tem três entrevistas obrigatórias, todas eliminatórias, e pode incluir uma etapa extra de desafio prático quando a vaga exige avaliação técnica mais aprofundada. A primeira entrevista é conduzida pela área de Pessoas e Cultura, a segunda pela área da vaga, e a terceira é presencial.</p>
+
+<h3>Resumo do fluxo</h3>
+
+<div class="fluxo">
+  <div class="fluxo-passo">
+    <div class="fluxo-num">1</div>
+    <div class="fluxo-texto">
+      <strong>Demanda da área</strong>
+      <p>A área que precisa contratar envia para Pessoas e Cultura o descritivo da vaga e a remuneração definida por ela própria, dentro do budget da área. Pessoas e Cultura pode ajudar com pesquisa de mercado.</p>
+    </div>
+  </div>
+  <div class="fluxo-passo">
+    <div class="fluxo-num">2</div>
+    <div class="fluxo-texto">
+      <strong>Divulgação</strong>
+      <p>Indeed para vagas mais generalistas, LinkedIn pelo gestor para vagas mais técnicas, APInfo para tecnologia. PDF da vaga é gerado a partir de template, e a remuneração nunca aparece no PDF, ela é informada apenas na 1ª entrevista.</p>
+    </div>
+  </div>
+  <div class="fluxo-passo">
+    <div class="fluxo-num">3</div>
+    <div class="fluxo-texto">
+      <strong>Recebimento e organização de currículos</strong>
+      <p>Currículos chegam por Indeed e por e-mail. Regras automáticas direcionam para subpasta da caixa, script extrai anexos e renomeia com nome do candidato, tudo vai para pasta no Drive da área.</p>
+    </div>
+  </div>
+  <div class="fluxo-passo">
+    <div class="fluxo-num">4</div>
+    <div class="fluxo-texto">
+      <strong>Triagem pelo gestor</strong>
+      <p>Pessoas e Cultura libera a pasta para o gestor, que distribui os currículos em duas subpastas, <em>Entrevistar</em> e <em>Recusar</em>. Os recusados recebem e-mail padrão. Os aprovados recebem convite para a 1ª entrevista.</p>
+    </div>
+  </div>
+  <div class="fluxo-passo">
+    <div class="fluxo-num">5</div>
+    <div class="fluxo-texto">
+      <strong>1ª entrevista, online, com Pessoas e Cultura</strong>
+      <p>Conversa para entender currículo, trajetória, postura, fit cultural. Após a entrevista, P&C faz relatório e leva parecer ao gestor, que decide quem avança.</p>
+    </div>
+  </div>
+  <div class="fluxo-passo">
+    <div class="fluxo-num">6</div>
+    <div class="fluxo-texto">
+      <strong>2ª entrevista, online, técnica</strong>
+      <p>Conduzida pelo gestor da área ou por alguém com conhecimento técnico designado por ele. Tem alguém de Pessoas e Cultura presente. Pode incluir desafio prático antes ou depois da entrevista.</p>
+    </div>
+  </div>
+  <div class="fluxo-passo">
+    <div class="fluxo-num">7</div>
+    <div class="fluxo-texto">
+      <strong>3ª entrevista, presencial, na faculdade</strong>
+      <p>Conduzida pelo gestor da área, com presença da Diretora Executiva quando o cargo é mais estratégico. Avalia comportamento presencial, postura, vestimenta. Se foi proposto desafio, o candidato pode apresentá-lo nesta etapa.</p>
+    </div>
+  </div>
+  <div class="fluxo-passo">
+    <div class="fluxo-num">8</div>
+    <div class="fluxo-texto">
+      <strong>Aprovação final e proposta</strong>
+      <p>Após a 3ª entrevista, o aprovado recebe e-mail de comunicação da aprovação e detalhes iniciais. A proposta formal de contratação é tratada na sequência.</p>
+    </div>
+  </div>
+</div>
+
+<h3>Quem participa de cada entrevista</h3>
+
+<table class="tabela">
+<thead>
+<tr><th>Etapa</th><th>Conduzida por</th><th>Pode participar também</th></tr>
+</thead>
+<tbody>
+<tr><td>1ª entrevista</td><td>Alguém da área de Pessoas e Cultura, gestor da área ou analista pleno</td><td>—</td></tr>
+<tr><td>2ª entrevista</td><td>Gestor da área da vaga ou pessoa com conhecimento técnico designada por ele</td><td>Alguém de Pessoas e Cultura</td></tr>
+<tr><td>3ª entrevista</td><td>Gestor da área da vaga</td><td>Diretora Executiva (cargos mais estratégicos), alguém de Pessoas e Cultura</td></tr>
+<tr><td>Etapa extra (desafio)</td><td>Gestor da área ou pessoa designada por ele</td><td>—</td></tr>
+</tbody>
+</table>
+
+<p>Dependendo do cargo, podem ser incluídas etapas adicionais ao processo, como rodadas extras de entrevista, dinâmicas em grupo ou avaliações técnicas específicas. Nesses casos, Pessoas e Cultura alinha com o gestor da área antes do início do processo e adapta o fluxo conforme a necessidade.</p>
+</section>
+
+<section id="abertura-vaga">
+  <h2>Antes de abrir a vaga</h2>
+  <p>Toda vaga começa com uma demanda da área. A área que precisa contratar é quem envia para Pessoas e Cultura o descritivo da vaga e a remuneração. A gestão do salário pertence ao gestor, porque sai do budget dele.</p>
+
+<h3>O que a área precisa enviar</h3>
+<p>O gestor da área manda para P&C o descritivo da vaga, com responsabilidades, requisitos, perfil desejado e a faixa salarial. Quando o gestor não tem clareza sobre o salário a praticar, Pessoas e Cultura pode oferecer apoio fazendo uma pesquisa de média de mercado para orientar a decisão. A pesquisa orienta, mas a definição final fica com o gestor.</p>
+
+<h3>Padronização do descritivo</h3>
+<p>P&C coloca o descritivo recebido dentro do template da Faculdade Belavista para gerar a versão em PDF que será divulgada. <strong>A remuneração não entra no PDF.</strong> Ela é informada apenas na 1ª entrevista, quando P&C conversa com o candidato.</p>
+
+<div class="info-box">
+<strong>Por que não colocamos o salário no PDF:</strong> a faixa salarial é informação sensível e parte da conversa com o candidato. Compartilhá-la em material aberto pode atrair candidatos pelo número e não pelo conjunto da oportunidade, e pode gerar desalinhamentos antes mesmo da primeira conversa.
+</div>
+</section>
+
+<section id="divulgacao">
+  <h2>Divulgação da vaga</h2>
+  <p>A escolha do canal depende do tipo de vaga. Vagas mais generalistas funcionam bem em plataformas amplas. Vagas mais analíticas, estratégicas ou técnicas pedem canais mais segmentados.</p>
+
+<h3>Indeed</h3>
+<p>Usado para vagas com conhecimentos mais abrangentes, como assistente administrativo, recepção e similares, em que não há grande especificidade técnica. Os currículos chegam pelo próprio painel da plataforma e P&C faz o download dos arquivos.</p>
+
+<h3>LinkedIn</h3>
+<p>Usado para vagas que exigem conhecimento mais analítico ou estratégico. A faculdade não mantém assinatura para divulgação paga de vagas no LinkedIn. Por isso, P&C pede ao gestor da área para divulgar a vaga no perfil pessoal dele. O alcance tende a ser maior porque os contatos do gestor são da própria área da vaga.</p>
+
+<h3>APInfo</h3>
+<p>Usado para vagas relacionadas a tecnologia.</p>
+
+<div class="info-box" id="acessos-divulgacao">
+<strong>Acessos às plataformas</strong>
+<p>O acesso ao Indeed e ao APInfo é feito com o login do colaborador da área de Pessoas e Cultura responsável pelo processo. Não há login compartilhado da área, cada pessoa entra com sua própria conta.</p>
+<table class="tabela tabela-acessos">
+<thead><tr><th>Plataforma</th><th>Como acessar</th></tr></thead>
+<tbody>
+<tr><td>Indeed</td><td>Login pessoal do colaborador de Pessoas e Cultura</td></tr>
+<tr><td>APInfo</td><td>Login pessoal do colaborador de Pessoas e Cultura</td></tr>
+<tr><td>LinkedIn</td><td>Conta pessoal do gestor da área da vaga, que faz a divulgação na rede dele</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="recebimento">
+  <h2>Recebimento e organização de currículos</h2>
+  <p>Os currículos chegam por dois caminhos. Pelo <strong>Indeed</strong>, e nesse caso Pessoas e Cultura faz o download diretamente do painel da plataforma. Por <strong>e-mail</strong>, no endereço <code>pessoasecultura@faculdadebelavista.edu.br</code>, e nesse caso os candidatos enviam os currículos como anexo.</p>
+
+<h3>Regras de e-mail por vaga</h3>
+<p>Para cada vaga aberta, P&C cria uma subpasta dentro da caixa de entrada de Pessoas e Cultura e configura uma regra automática que direciona os e-mails referentes àquela vaga para a subpasta. Isso evita que os currículos se misturem aos demais e-mails da caixa.</p>
+
+<h3>Extração de anexos por script</h3>
+<p>Após cerca de uma semana de recebimento, P&C usa um script para percorrer essa subpasta específica, extrair os anexos dos e-mails (em geral, os próprios currículos), salvar os arquivos na pasta da vaga no Drive e renomear cada arquivo com o nome do candidato remetente, padronizando o conjunto.</p>
+
+<div class="info-box">
+<strong>Como obter o script.</strong> O script é gerado sob demanda usando uma ferramenta de IA generativa, como Gemini ou Claude. Para isso, peça à ferramenta um script que:
+<ul>
+<li>extraia os anexos dos e-mails de uma subpasta específica da caixa de entrada (informe o nome da subpasta);</li>
+<li>salve os arquivos na pasta de destino do Drive correspondente à vaga (informe o caminho da pasta);</li>
+<li>renomeie cada arquivo com o nome do remetente do e-mail.</li>
+</ul>
+A cada vaga, ajuste o nome da subpasta da caixa e o caminho da pasta do Drive na hora de pedir o script. Não é necessário guardar o script entre vagas.
+</div>
+
+<h3>Estrutura de pastas no Drive</h3>
+<p>A organização da pasta da vaga no Drive segue o padrão abaixo:</p>
+
+<pre class="estrutura-pastas">📁 Contratações
+   📁 Título da Vaga (Ano)
+      └── arquivos dos currículos, renomeados pelo script com o nome do candidato
+      📁 Entrevistar
+         └── currículos selecionados pelo gestor
+      📁 Recusar
+         └── currículos não selecionados pelo gestor</pre>
+
+<p>Os currículos ficam na raiz da pasta da vaga. As duas subpastas <em>Entrevistar</em> e <em>Recusar</em> servem para o gestor fazer a triagem, movendo cada arquivo para a subpasta correspondente. P&C cria a estrutura inicial e libera o acesso para o gestor da área ou para o responsável técnico designado (analista pleno, coordenador).</p>
+</section>
+
+<section id="triagem">
+  <h2>Triagem e respostas iniciais</h2>
+  <p>A triagem dos currículos é feita pelo gestor da área, ou por um analista pleno ou coordenador da área, com base nos arquivos disponíveis na pasta de currículos do Drive.</p>
+
+<h3>O que o gestor faz</h3>
+<p>O gestor abre cada currículo e move o arquivo para a subpasta <em>Entrevistar</em> ou <em>Recusar</em>, conforme avaliação dele. Quando o gestor termina, P&C consulta as duas subpastas para encaminhar as respostas aos candidatos.</p>
+
+<h3>Resposta aos candidatos recusados</h3>
+<p>Todos os candidatos cujos currículos foram movidos para a subpasta <em>Recusar</em> recebem um e-mail informando que, após análise, foi optado por seguir com outros perfis. A resposta é enviada porque o candidato dedicou tempo a se candidatar e merece um retorno claro, ainda que negativo. O modelo está em <a href="#emails">Modelos de e-mail</a>, na categoria Recusas.</p>
+
+<h3>Convite para a 1ª entrevista</h3>
+<p>Os candidatos cujos currículos foram movidos para a subpasta <em>Entrevistar</em> recebem o e-mail de convite para a primeira entrevista. O e-mail explica o processo seletivo da Faculdade Belavista (três etapas eliminatórias) e traz o link do Microsoft Bookings para que o próprio candidato escolha o horário disponível na agenda da área de Pessoas e Cultura.</p>
+</section>
+
+<section id="entrevista-1">
+  <h2>1ª entrevista, com Pessoas e Cultura</h2>
+  <p>A primeira entrevista é online e conduzida por alguém da área de Pessoas e Cultura, que pode ser o gestor da área ou um analista pleno. Não há participação da área da vaga nesta etapa.</p>
+
+<h3>O que avaliamos</h3>
+<p>Esta entrevista olha para o currículo da pessoa, a trajetória profissional, a forma de se portar e o fit com a cultura da Faculdade Belavista. Ainda que o fit cultural só fique claro ao longo das próximas etapas e mesmo no início do trabalho, esta primeira conversa já dá sinais relevantes.</p>
+
+<h3>Perguntas que sempre fazemos</h3>
+<p>Uma pergunta especialmente útil é se o candidato pesquisou sobre a Faculdade Belavista antes da entrevista. Há informação disponível no Instagram, no YouTube e no site, e candidatos genuinamente interessados costumam chegar com algum conhecimento prévio. Quem não pesquisou normalmente não nos interessa.</p>
+
+<h3>Como conduzir</h3>
+<p>Durante a entrevista, mantenha o currículo do candidato aberto. Vá conversando, tirando dúvidas sobre o currículo, perguntando sobre a trajetória e ouvindo o que o candidato traz. É também o momento em que P&C apresenta a remuneração da vaga, que não está no PDF de divulgação.</p>
+
+<h3>Depois da entrevista</h3>
+<p>P&C escreve um relatório curto da conversa e leva o parecer ao gestor da área. O gestor decide se convida o candidato para a segunda entrevista, conduzida por ele ou por alguém designado, e se haverá um desafio prático associado a essa próxima etapa.</p>
+
+<div class="info-box">
+<strong>Onde guardar o relatório</strong>
+<p>Salvar dentro da pasta da vaga no Drive (<em>Contratações → Título da Vaga (Ano)</em>), com nome <code>[nome-candidato] — relatório 1ª entrevista.docx</code>.</p>
+</div>
+</section>
+
+<section id="entrevista-2">
+  <h2>2ª entrevista, técnica</h2>
+  <p>A segunda entrevista é online e conduzida pela área da vaga. Quem está à frente é o gestor da área ou alguém com conhecimento técnico designado por ele. Alguém de Pessoas e Cultura participa da conversa também.</p>
+
+<h3>O que avaliamos</h3>
+<p>O foco aqui não é mais o fit cultural, e sim o fit do candidato com a vaga e o seu descritivo. As perguntas são mais técnicas, voltadas a verificar conhecimento, prática anterior e capacidade de resolver problemas da área.</p>
+
+<h3>Combinações com o gestor antes do envio</h3>
+<p>Antes de enviar os convites da 2ª entrevista, P&C alinha com o gestor:</p>
+
+<ol>
+<li>Se o agendamento será por link do Microsoft Bookings (quando há muitos candidatos avançando) ou por horários listados no corpo do e-mail (quando são poucos candidatos e poucos horários).</li>
+<li>Quem participará da entrevista, caso não seja o próprio gestor.</li>
+<li>Se haverá desafio prático e em que momento ele será proposto, antes ou depois desta entrevista.</li>
+</ol>
+
+<h3>Envio do convite</h3>
+<p>O e-mail é enviado por Pessoas e Cultura, com cópia para o gestor da área e para a pessoa que conduzirá a entrevista técnica, se for diferente do gestor. O modelo está em <a href="#emails">Modelos de e-mail</a>, com duas variantes, uma para link Bookings e outra para horários no corpo.</p>
+</section>
+
+<section id="desafio">
+  <h2>Etapa extra com desafio prático</h2>
+  <p>Algumas vagas demandam avaliação técnica mais aprofundada que pede um desafio prático. Não é regra para todas as vagas, depende do que o gestor da área entender necessário.</p>
+
+<h3>Quando o desafio é proposto</h3>
+<p>Há dois momentos comuns. <strong>Antes da 2ª entrevista</strong>, quando o desafio já foi planejado desde o início como parte do processo. Nesse caso, o candidato recebe o enunciado em PDF junto com o convite para a etapa extra e apresenta a solução em uma sessão online de 45 minutos. <strong>Depois da entrevista presencial</strong>, quando a necessidade de aprofundar a avaliação técnica só fica clara após a 3ª entrevista. Nesse caso, o candidato recebe o enunciado e apresenta a solução em sessão online com o gestor.</p>
+
+<h3>Como funciona a apresentação</h3>
+<p>O candidato resolve o case proposto e apresenta a solução em uma sessão de 45 minutos, online. A conversa é com a pessoa designada pelo gestor, que pode ser o próprio gestor ou um membro da área.</p>
+
+<h3>Onde está o enunciado</h3>
+<p>O enunciado do desafio é elaborado pelo gestor da área e enviado a P&C em PDF. P&C anexa esse PDF ao e-mail de convite. Os modelos estão em <a href="#emails">Modelos de e-mail</a>, na categoria Etapa extra (desafio).</p>
+</section>
+
+<section id="entrevista-3">
+  <h2>3ª entrevista, presencial</h2>
+  <p>A terceira entrevista acontece presencialmente na unidade da Faculdade Belavista em Pinheiros, São Paulo. É conduzida pelo gestor da área, e participam também alguém de Pessoas e Cultura e, dependendo do cargo, a Diretora Executiva.</p>
+
+<h3>O que avaliamos</h3>
+<p>O foco é o comportamento presencial. Postura, forma de se vestir, presença física, jeito de interagir no ambiente da faculdade. Tudo isso é considerado. Além disso, é uma oportunidade para o candidato conhecer o espaço de trabalho e a cultura ao vivo.</p>
+
+<h3>Quando a Diretora Executiva participa</h3>
+<p>Para cargos mais estratégicos, é importante que a Diretora Executiva participe da 3ª entrevista junto com o gestor da área. Para cargos operacionais, a presença não é necessária, e o gestor conduz com o apoio de P&C.</p>
+
+<h3>Apresentação do desafio</h3>
+<p>Se foi proposto um desafio prático e a apresentação ainda não aconteceu, ela pode ser feita nesta etapa, presencial. Caso o desafio tenha sido apresentado online antes, esta entrevista foca apenas na conversa final.</p>
+
+<h3>Envio do convite</h3>
+<p>O convite para a 3ª entrevista normalmente vem com um horário único proposto, ou poucos horários, e o candidato responde confirmando comparecimento. O modelo está em <a href="#emails">Modelos de e-mail</a>.</p>
+</section>
+
+<section id="aprovacao">
+  <h2>Aprovação final e proposta</h2>
+  <p>Após a 3ª entrevista, o gestor da área e Pessoas e Cultura alinham a decisão final. O candidato aprovado recebe um e-mail comunicando a aprovação e os próximos passos, com previsão de data de início e prazo para retorno.</p>
+
+<h3>O que vem no e-mail de aprovação</h3>
+<p>Comunicação da aprovação na vaga, identificação da área em que vai atuar, data prevista de início para alinhamento conforme disponibilidade do candidato, e prazo para retorno do aceite preliminar. O modelo está em <a href="#emails">Modelos de e-mail</a>.</p>
+
+<h3>O que vem depois do aceite</h3>
+<p>A proposta formal, com todos os detalhes da contratação (CLT ou outro regime, benefícios, jornada, data efetiva de início) é apresentada após o aceite preliminar. Esses trâmites seguem com Pessoas e Cultura em conjunto com o financeiro/jurídico da faculdade. Esta seção do roteiro será expandida conforme padronizarmos a etapa de admissão.</p>
+
+<div class="info-box">
+<strong>A consolidar</strong>
+<p>Documentação de admissão exigida, exame admissional, cronograma de integração, materiais de boas-vindas. Quando esse fluxo estiver mapeado, incluir aqui.</p>
+</div>
+</section>
+
+<section id="emails">
+  <h2>Modelos de e-mail</h2>
+  <p>Os modelos abaixo cobrem todas as etapas do processo. Cada modelo tem campos editáveis no topo. À medida que você preenche os campos, o e-mail é renderizado em tempo real com a mesma formatação que enviamos aos candidatos.</p>
+
+<p><strong>Como usar:</strong> preencha os campos, clique em <em>Copiar e-mail formatado</em> e cole no corpo do e-mail no Outlook (Ctrl+V). A formatação visual é preservada, idêntica aos modelos atuais. Se preferir só o texto, há um botão alternativo para copiar como texto puro.</p>
+
+<div class="emails-toolbar">
+  <input type="text" id="email-busca" placeholder="Buscar modelo..." class="busca-input">
+  <span class="emails-contador" id="emails-contador"></span>
+</div>
+
+<div id="emails-lista">
+  <!-- Modelos serão inseridos aqui pelo JavaScript -->
+</div>
+</section>
+
+<section id="bookings">
+  <h2>Manual do Microsoft Bookings</h2>
+  <p>Esta seção mostra como funciona a página de reservas que usamos para os agendamentos do processo seletivo. O Bookings é uma ferramenta da Microsoft que cria páginas de reservas compartilhadas. Os candidatos acessam um link e escolhem um horário disponível, e o agendamento entra automaticamente nas agendas dos entrevistadores.</p>
+
+<h3>Como o Bookings está organizado</h3>
+
+<p>A estrutura tem três níveis. <strong>Conta do Microsoft 365</strong> é o login da faculdade. Dentro dela existe uma <strong>página de reservas compartilhada</strong>, que é o nosso espaço de agendamentos. Dentro da página, criamos vários <strong>serviços</strong>, cada serviço corresponde a uma entrevista específica, com sua própria duração, equipe atribuída e disponibilidade.</p>
+
+<div class="manual-img">
+  <img src="img/01-pagina-reservas-card.png" alt="Card da página de reservas Faculdade Belavista">
+  <p class="manual-img-legenda">Página de reservas <strong>Faculdade Belavista | Entrevistas</strong>, acessada na tela inicial do Bookings. É dentro dela que ficam todos os serviços de agendamento usados no processo seletivo.</p>
+</div>
+
+<h3>O que existe hoje</h3>
+
+<p>A página tem três serviços já configurados:</p>
+
+<table class="tabela">
+<thead><tr><th>Serviço</th><th>Duração</th><th>Equipe atribuída</th></tr></thead>
+<tbody>
+<tr><td>Faculdade Belavista | 1ª Entrevista | Pessoas e Cultura (online)</td><td>30 min</td><td>Giulia Oliveira, Lais Oliveira</td></tr>
+<tr><td>Faculdade Belavista | 2ª Entrevista | Operações (online)</td><td>45 min</td><td>Gestor de Operações</td></tr>
+<tr><td>Faculdade Belavista | 2ª Entrevista | Admissões e Marketing (online)</td><td>45 min</td><td>Gestor de Admissões e Marketing</td></tr>
+</tbody>
+</table>
+
+<h2 style="margin-top: 56px; font-size: 24px;">Passo a passo: criar um novo serviço</h2>
+
+<p>Use este passo a passo quando precisar abrir uma 2ª entrevista para uma área que ainda não tem serviço próprio (por exemplo, Tecnologia, Facilities, RH).</p>
+
+<h3>Passo 1, abrir a página de reservas</h3>
+
+<p>Entre no Microsoft Bookings com o login da faculdade e clique no card <strong>Faculdade Belavista | Entrevistas</strong>. Você cai dentro da página de reservas, com o menu lateral à esquerda.</p>
+
+<div class="manual-img">
+  <img src="img/02-menu-lateral.png" alt="Menu lateral da página de reservas">
+  <p class="manual-img-legenda">Menu lateral da página de reservas. As duas opções relevantes para o processo seletivo são <strong>Equipe</strong>, onde cadastramos quem pode entrevistar, e <strong>Serviços</strong>, onde criamos e editamos os links das entrevistas.</p>
+</div>
+
+<h3>Passo 2, conferir se a pessoa está na equipe</h3>
+
+<p>Antes de criar o serviço, verifique se quem vai conduzir a entrevista já está cadastrado na <strong>Equipe</strong> da página. Se a pessoa não estiver cadastrada aí, ela não vai aparecer como opção quando você for atribuir a equipe ao serviço.</p>
+
+<p>Para cadastrar uma pessoa nova, clique em <strong>Equipe</strong> no menu lateral, depois em <strong>Adicionar nova equipe</strong> (a expressão é "equipe" mesmo, no sentido de membro/funcionário da página) e busque pelo nome ou e-mail. Salve. Aí pode voltar para Serviços.</p>
+
+<h3>Passo 3, criar o serviço</h3>
+
+<p>Em <strong>Serviços</strong>, clique em <strong>Adicionar novo serviço</strong>, no topo da lista.</p>
+
+<div class="manual-img">
+  <img src="img/08-lista-servicos.png" alt="Lista de serviços com botão adicionar e ícone de editar">
+  <p class="manual-img-legenda">Tela de Serviços. <strong>1</strong> Botão para adicionar um novo serviço. <strong>2</strong> Ícone de lápis em cada linha permite editar um serviço existente.</p>
+</div>
+
+<h3>Passo 4, preencher os Detalhes básicos</h3>
+
+<p>Use o nome no padrão da casa: <code>Faculdade Belavista | [Etapa] | [Área] (online)</code>. Por exemplo, <em>Faculdade Belavista | 2ª Entrevista | Tecnologia (online)</em>. Ative o toggle <strong>Adicionar reunião online</strong> (gera link de Teams automaticamente para o convite). Mantenha marcado <strong>Enviar um link de reunião anônima para os clientes</strong>. Defina a duração: 30 minutos para 1ª entrevista, 45 minutos para 2ª entrevista.</p>
+
+<div class="manual-img">
+  <img src="img/03-detalhe-basico.png" alt="Tela de Detalhe básico do serviço">
+  <p class="manual-img-legenda">Aba <strong>Detalhe básico</strong>. Os destaques mostram os pontos que você precisa preencher: nome do serviço no padrão da casa, toggle de reunião online ativado e duração configurada.</p>
+</div>
+
+<h3>Passo 5, configurar Opções de disponibilidade</h3>
+
+<p>Esta aba define como os horários ficam disponíveis para os candidatos. Use os mesmos parâmetros dos serviços já existentes:</p>
+
+<ul>
+<li><strong>Incrementos de tempo:</strong> 30 minutos, ou seja, os horários disponíveis aparecem de 30 em 30 minutos.</li>
+<li><strong>Prazo de entrega mínimo:</strong> 12 horas, quanto tempo antes da reunião o candidato ainda pode reservar.</li>
+<li><strong>Prazo de entrega máximo:</strong> 7 dias, até quantos dias no futuro o candidato vê horários disponíveis.</li>
+<li><strong>Disponibilidade geral:</strong> selecione <em>Horas personalizadas (recorrência semanal)</em> e defina os blocos de horário em que a equipe atende. No exemplo abaixo, terça, quarta e sexta das 14h às 17h. Os outros dias ficam não reserváveis.</li>
+</ul>
+
+<div class="manual-img">
+  <img src="img/04-disponibilidade-politica.png" alt="Política de agendamento e disponibilidade">
+  <p class="manual-img-legenda">Aba <strong>Opções de disponibilidade</strong>, parte de cima. Política de agendamento: incrementos de 30 min, prazo mínimo de 12 h, prazo máximo de 7 dias. Disponibilidade geral configurada como recorrência semanal.</p>
+</div>
+
+<div class="manual-img">
+  <img src="img/05-disponibilidade-horarios.png" alt="Horários da semana configurados">
+  <p class="manual-img-legenda">Mesma aba, parte de baixo. Janelas reserváveis configuradas em terça, quarta e sexta das 14h às 17h. Para alterar, clique no horário e ajuste, ou use o ícone de lixeira para remover e recomeçar.</p>
+</div>
+
+<h3>Passo 6, atribuir a equipe</h3>
+
+<p>Selecione quem vai conduzir as entrevistas para este serviço. Para 1ª entrevista, marque as pessoas de Pessoas e Cultura. Para 2ª entrevista, marque o gestor da área. Mantenha selecionada a opção <strong>Atribua qualquer um da equipe selecionada</strong> (assim, qualquer pessoa marcada pode ser alocada quando o candidato reserva). Mantenha desligada a opção de permitir que o cliente escolha a equipe.</p>
+
+<div class="manual-img">
+  <img src="img/06-atribuir-equipe.png" alt="Atribuição de equipe ao serviço">
+  <p class="manual-img-legenda">Aba <strong>Atribuir equipe</strong>. Marque a primeira opção (atribuir qualquer um da equipe). À direita, lista das pessoas atribuídas. Se o nome de quem você quer não aparece na lista da esquerda, volte para Equipe no menu lateral e cadastre a pessoa lá primeiro.</p>
+</div>
+
+<h3>Passo 7, conferir os campos personalizados</h3>
+
+<p>Esta aba define o que pedimos ao candidato no momento da reserva. A configuração padrão dos serviços atuais mantém os cinco campos marcados (e-mail, telefone, endereço, anotações, e-mails de convidado), mas <strong>nenhum deles obrigatório</strong>. Mantenha esse padrão.</p>
+
+<div class="manual-img">
+  <img src="img/07-campos-personalizados.png" alt="Campos personalizados">
+  <p class="manual-img-legenda">Aba <strong>Campos personalizados</strong>. Os cinco campos ficam marcados, mas todos com o toggle <em>Obrigatório</em> desligado. Assim, o candidato pode reservar sem preencher informações extras, e a área pede o que precisar pelo próprio e-mail de convite.</p>
+</div>
+
+<h3>Passo 8, configurar Notificações</h3>
+
+<p>Mantenha as duas opções marcadas: <strong>Notificar a empresa por e-mail</strong> (a equipe recebe aviso de cada reserva nova ou alterada) e <strong>Enviar convite de reunião para o cliente</strong> (o candidato recebe um convite que entra direto na agenda dele).</p>
+
+<div class="manual-img">
+  <img src="img/09-notificacoes.png" alt="Configurações de notificação">
+  <p class="manual-img-legenda">Aba <strong>Notificações</strong>. Os dois checkboxes ficam marcados. O campo <em>Adicionar mais informações</em> pode ser deixado em branco; as informações que o candidato precisa receber já estão no e-mail de convite que enviamos pela área de Pessoas e Cultura.</p>
+</div>
+
+<h3>Passo 9, salvar e copiar o link</h3>
+
+<p>Clique em <strong>Salvar alterações</strong> no canto inferior direito. O serviço aparece na lista. O link público desse serviço é o link da página de reservas com o serviço selecionado, e é o que você cola no e-mail de convite. Para acessar o link, vá em <strong>Página de reservas</strong> no menu lateral, depois <em>Compartilhar</em>, e copie o endereço.</p>
+
+<div class="manual-img">
+  <img src="img/10-lista-servicos-final.png" alt="Lista final dos serviços configurados">
+  <p class="manual-img-legenda">Lista final dos serviços. Cada linha mostra o nome, a duração e os ícones das pessoas atribuídas àquela entrevista.</p>
+</div>
+
+<h2 style="margin-top: 56px; font-size: 24px;">Referência: as cinco abas do serviço</h2>
+
+<p>Esta seção descreve cada aba do serviço com mais detalhe, para consulta rápida quando você precisar editar algo específico sem refazer todo o passo a passo.</p>
+
+<h3>Aba 1, Detalhe básico</h3>
+<p>Define identidade e formato da entrevista. <strong>Nome do serviço:</strong> obrigatório, padrão "Faculdade Belavista | [Etapa] | [Área] (online)". <strong>Descrição:</strong> opcional, deixamos em branco. <strong>Localização:</strong> deixamos em branco e ativamos <em>Adicionar reunião online</em>, que gera o link Teams automaticamente. <strong>Enviar link anônimo:</strong> marcado, o candidato recebe o link mesmo sem login Microsoft. <strong>Duração:</strong> 30 min para 1ª, 45 min para 2ª. <strong>Tempo de buffer:</strong> desligado.</p>
+
+<h3>Aba 2, Opções de disponibilidade</h3>
+<p>Define quando os horários aparecem para os candidatos. <strong>Incrementos de tempo:</strong> 30 min. <strong>Prazo mínimo:</strong> 12 h, ou seja, ninguém reserva para "daqui a 1 hora". <strong>Prazo máximo:</strong> 7 dias, evita que candidatos reservem para muito longe e a agenda da equipe mude. <strong>Disponibilidade geral:</strong> Horas personalizadas (recorrência semanal), com janelas semanais que se repetem. Use <em>Definir disponibilidade diferente para um intervalo de datas</em> quando precisar abrir ou bloquear horários em uma semana específica (período de férias, recesso, evento).</p>
+
+<h3>Aba 3, Atribuir equipe</h3>
+<p>Define quem realiza as entrevistas deste serviço. <strong>Atribua qualquer um da equipe selecionada:</strong> marcado, qualquer pessoa atribuída pode ser alocada quando o candidato reserva. <strong>Atribua a todos os funcionários:</strong> não usamos, isso obrigaria todos a participarem da mesma reunião. <strong>Permitir que o cliente escolha a equipe:</strong> desligado, o candidato não escolhe entrevistador. <strong>Equipe atribuída:</strong> lista das pessoas que podem conduzir esse tipo de entrevista. Para adicionar alguém que não aparece, vá em Equipe no menu lateral primeiro.</p>
+
+<h3>Aba 4, Campos personalizados</h3>
+<p>Informações que o candidato preenche no momento da reserva. Os cinco campos padrão (e-mail, telefone, endereço, anotações, e-mails de convidado) ficam marcados, mas nenhum obrigatório. <strong>Adicionar campo personalizado:</strong> usar com parcimônia, só se houver informação realmente necessária no momento da reserva. Em geral, perguntamos as coisas no e-mail e não no formulário.</p>
+
+<h3>Aba 5, Notificações</h3>
+<p>Define os e-mails automáticos do Bookings. <strong>Notificar a empresa por e-mail:</strong> marcado, P&C recebe aviso quando alguém reserva. <strong>Enviar convite de reunião para o cliente:</strong> marcado, candidato recebe convite com link Teams direto na agenda. <strong>Adicionar mais informações:</strong> texto que entra na confirmação enviada ao candidato. Deixamos em branco porque o e-mail de convite que P&C envia já tem as informações necessárias. <strong>Lembretes de e-mail:</strong> seção mais abaixo, permite configurar lembretes automáticos antes da reunião. Configuração atual: usar o padrão da plataforma.</p>
+
+<h2 style="margin-top: 56px; font-size: 24px;">Operações comuns</h2>
+
+<h3>Editar um serviço existente</h3>
+<p>Em <strong>Serviços</strong>, passe o mouse sobre o serviço e clique no ícone de lápis (ver imagem do Passo 3 acima). Faça as alterações nas abas relevantes e salve.</p>
+
+<h3>Cadastrar uma pessoa nova na equipe</h3>
+<p>Vá em <strong>Equipe</strong> no menu lateral, clique em <strong>Adicionar nova equipe</strong>, busque pelo nome ou e-mail e salve. Depois disso, a pessoa fica disponível para ser atribuída a qualquer serviço.</p>
+
+<h3>Bloquear horários em uma semana específica</h3>
+<p>Em <strong>Opções de disponibilidade</strong>, abaixo da grade semanal, há a opção <em>Definir disponibilidade diferente para um intervalo de datas</em>. Use para bloquear ou abrir horários em uma semana específica sem alterar a regra geral.</p>
+
+<h3>Encerrar um serviço após o processo</h3>
+<p>Quando uma vaga é fechada, dois caminhos. Se vai usar o serviço de novo (1ª entrevista, 2ª de Operações ou 2ª de Admissões e Marketing), <strong>desligue o toggle "Mostrar este serviço na página de reservas"</strong> em qualquer aba do serviço, na coluna esquerda inferior. Isso esconde o serviço dos candidatos sem apagá-lo. Se foi um serviço criado para uma vaga única que não vai se repetir, em Serviços, ícone de lixeira na linha do serviço para remover.</p>
+
+<h3>Acompanhar os agendamentos do dia</h3>
+<p>Vá em <strong>Calendário</strong> no menu lateral. Mostra todos os agendamentos confirmados, organizados por dia e por entrevistador. Cancelar ou remarcar um agendamento aqui dispara automaticamente o e-mail correspondente para o candidato.</p>
+</section>
+    <footer class="rodape">
+      <p>Roteiro de Atração e Seleção — Faculdade Belavista, Pessoas e Cultura.</p>
+      <p>Última atualização: 5 de maio de 2026.</p>
+    </footer>
+  </main>
+</div>
+
+<script>
+const EMAILS = [{"id": "convite-1a", "categoria": "Convites", "titulo": "Convite para 1ª entrevista (Pessoas e Cultura)", "descricao": "Enviado após triagem de currículos, com link do Microsoft Bookings para a candidata agendar.", "remetente": "Pessoas e Cultura <pessoasecultura@faculdadebelavista.edu.br>", "campos": [{"key": "tratamento", "label": "Forma de tratamento", "default": "Prezada"}, {"key": "primeiro_nome", "label": "Primeiro nome do candidato", "default": "Gabriela"}, {"key": "vaga", "label": "Nome da vaga", "default": "Analista Jr. de Design Gráfico"}, {"key": "area_2a_entrevista", "label": "Área da 2ª entrevista", "default": "Admissões e Marketing"}, {"key": "link_bookings", "label": "Link do Microsoft Bookings", "default": "https://outlook.office.com/book/PessoasCulturaFaculdadeBelavistaEntrevistas@ise.org.br/?ismsaljsauthenabled"}], "assunto": "Faculdade Belavista | {{vaga}} | Convite para Entrevista", "blocos": [{"tipo": "saudacao", "texto": "{{tratamento}} {{primeiro_nome}},"}, {"tipo": "paragrafo", "texto": "Agradecemos o envio do seu currículo para a vaga de [b]{{vaga}}[/b] da Faculdade Belavista. Ficamos muito felizes com o seu interesse em fazer parte do nosso time e, após análise cuidadosa do seu perfil, gostaríamos de convidá-la a dar continuidade ao nosso processo seletivo."}, {"tipo": "titulo", "texto": "Como funciona o nosso processo seletivo?"}, {"tipo": "paragrafo", "texto": "Nosso processo é composto por [b]três etapas, todas elas de caráter eliminatório[/b]. Ou seja, apenas os candidatos aprovados em cada fase avançam para a seguinte:"}, {"tipo": "etapa", "estado": "padrao", "numero": "1", "titulo": "Entrevista com Pessoas & Cultura (online)", "descricao": "Uma conversa inicial com nossa equipe de Pessoas e Cultura para nos conhecermos melhor — sua trajetória, perfil e expectativas."}, {"tipo": "etapa", "estado": "padrao", "numero": "2", "titulo": "Entrevista Técnica com a Área de {{area_2a_entrevista}} (online)", "descricao": "Uma conversa mais aprofundada com o gestor de {{area_2a_entrevista}}, área em que está inserida a vaga que está aberta."}, {"tipo": "etapa", "estado": "padrao", "numero": "3", "titulo": "Entrevista Presencial na Faculdade Belavista", "descricao": "A etapa final acontece de forma presencial em nossa unidade em Pinheiros, São Paulo. É uma oportunidade para nos conhecermos de perto e você conhecer o nosso ambiente de trabalho."}, {"tipo": "titulo", "texto": "Como agendar a sua entrevista?"}, {"tipo": "paragrafo", "texto": "Para dar início ao processo, pedimos que você realize o agendamento da [b]primeira entrevista[/b] pelo link abaixo, escolhendo o horário que melhor se encaixe na sua agenda:"}, {"tipo": "link_bookings", "url": "{{link_bookings}}", "rotulo": "Clique para agendar"}, {"tipo": "paragrafo", "texto": "Aguardamos o seu agendamento. Em caso de dúvidas, não hesite em nos contactar respondendo a este e-mail."}, {"tipo": "paragrafo", "texto": "Atenciosamente,"}, {"tipo": "assinatura"}]}, {"id": "convite-2a-bookings", "categoria": "Convites", "titulo": "Convite para 2ª entrevista, com link Bookings", "descricao": "Use quando muitos candidatos avançam e faz sentido um agendamento por link.", "remetente": "Pessoas e Cultura <pessoasecultura@faculdadebelavista.edu.br>", "campos": [{"key": "tratamento", "label": "Forma de tratamento", "default": "Prezada"}, {"key": "primeiro_nome", "label": "Primeiro nome do candidato", "default": "Gabriela"}, {"key": "vaga", "label": "Nome da vaga", "default": "Analista Jr. de Design Gráfico"}, {"key": "area", "label": "Área da vaga", "default": "Admissões e Marketing"}, {"key": "link_bookings", "label": "Link do Bookings da 2ª entrevista", "default": "https://outlook.office.com/book/.../"}], "assunto": "Faculdade Belavista | {{vaga}} | Aprovação na 1ª Entrevista e Convite", "blocos": [{"tipo": "saudacao", "texto": "{{tratamento}} {{primeiro_nome}},"}, {"tipo": "paragrafo", "texto": "Temos uma boa notícia para compartilhar com você. Após a Entrevista com a Área de Pessoas & Cultura, você foi aprovada e avança para a próxima etapa do nosso processo seletivo para a vaga de [b]{{vaga}}[/b] da Faculdade Belavista!"}, {"tipo": "titulo", "texto": "Como está o seu processo seletivo?"}, {"tipo": "paragrafo", "texto": "Nosso processo é composto por [b]três etapas, todas de caráter eliminatório[/b]. Apenas os candidatos aprovados em cada fase avançam para a seguinte:"}, {"tipo": "etapa", "estado": "concluida", "numero": "✔", "titulo": "Entrevista com Pessoas & Cultura (online)", "descricao": "Etapa concluída. Parabéns, você foi aprovada!"}, {"tipo": "etapa", "estado": "atual", "numero": "★", "titulo": "Entrevista Técnica com a Área de {{area}} (online)", "descricao": "Etapa atual. Conversa aprofundada com o gestor da área."}, {"tipo": "etapa", "estado": "futura", "numero": "3", "titulo": "Entrevista Presencial na Faculdade Belavista", "descricao": "Etapa futura. Encontro presencial em nossa unidade em Pinheiros, São Paulo."}, {"tipo": "titulo", "texto": "Como agendar a sua entrevista?"}, {"tipo": "paragrafo", "texto": "Para dar início a essa etapa, pedimos que você realize o agendamento pelo link abaixo, escolhendo o horário que melhor se encaixe na sua agenda. A sessão terá duração aproximada de 45 minutos."}, {"tipo": "link_bookings", "url": "{{link_bookings}}", "rotulo": "Clique para agendar"}, {"tipo": "paragrafo", "texto": "Aguardamos o seu agendamento. Em caso de dúvidas, não hesite em nos contatar respondendo a este e-mail."}, {"tipo": "paragrafo", "texto": "Atenciosamente,"}, {"tipo": "assinatura"}]}, {"id": "convite-2a-horarios", "categoria": "Convites", "titulo": "Convite para 2ª entrevista, com horários no corpo", "descricao": "Use quando são poucos candidatos e poucos horários disponíveis. Sem link, candidato responde com a opção.", "remetente": "Pessoas e Cultura <pessoasecultura@faculdadebelavista.edu.br>", "campos": [{"key": "tratamento", "label": "Forma de tratamento", "default": "Prezado"}, {"key": "primeiro_nome", "label": "Primeiro nome do candidato", "default": "candidato"}, {"key": "vaga", "label": "Nome da vaga", "default": "Analista Júnior de Tecnologia e Suporte"}, {"key": "area", "label": "Área da vaga", "default": "Operações"}, {"key": "horarios", "label": "Horários disponíveis (uma linha por opção)", "default": "Terça-feira, dia 31 de março — das 15h30 às 16h30 ou 16h30 às 17h30\nQuarta-feira, dia 1º de abril — das 15h30 às 16h30 ou 16h30 às 17h30", "multiline": true}], "assunto": "Faculdade Belavista | {{vaga}} | Aprovação na 1ª Entrevista e Convite", "blocos": [{"tipo": "saudacao", "texto": "{{tratamento}} {{primeiro_nome}},"}, {"tipo": "paragrafo", "texto": "Temos uma boa notícia para compartilhar com você. Após a Entrevista com a Área de Pessoas & Cultura, você foi aprovado e avança para a próxima etapa do nosso processo seletivo para a vaga de [b]{{vaga}}[/b]!"}, {"tipo": "titulo", "texto": "Como está o seu processo seletivo?"}, {"tipo": "paragrafo", "texto": "Nosso processo é composto por [b]três etapas, todas de caráter eliminatório[/b]. Apenas os candidatos aprovados em cada fase avançam para a seguinte:"}, {"tipo": "etapa", "estado": "concluida", "numero": "✔", "titulo": "Entrevista com Pessoas & Cultura (online)", "descricao": "Etapa concluída. Parabéns, você foi aprovado!"}, {"tipo": "etapa", "estado": "atual", "numero": "★", "titulo": "Entrevista Técnica com a Área de {{area}} (online)", "descricao": "Etapa atual. Conversa aprofundada com o gestor da área."}, {"tipo": "etapa", "estado": "futura", "numero": "3", "titulo": "Entrevista Presencial na Faculdade Belavista", "descricao": "Etapa futura. Encontro presencial em nossa unidade em Pinheiros, São Paulo."}, {"tipo": "titulo", "texto": "Como agendar a sua entrevista?"}, {"tipo": "paragrafo", "texto": "Para dar início à próxima etapa, pedimos que você responda a este e-mail confirmando o horário de sua preferência entre as opções disponibilizadas abaixo:"}, {"tipo": "horarios", "rotulo": "Horários disponíveis", "linhas_campo": "horarios"}, {"tipo": "paragrafo", "texto": "Aguardamos o seu retorno. Em caso de dúvidas, não hesite em nos contatar respondendo a este e-mail."}, {"tipo": "paragrafo", "texto": "Atenciosamente,"}, {"tipo": "assinatura"}]}, {"id": "convite-3a", "categoria": "Convites", "titulo": "Convite para 3ª entrevista, presencial", "descricao": "Após aprovação na entrevista técnica. Confirma horário único ou poucos horários presenciais.", "remetente": "Pessoas e Cultura <pessoasecultura@faculdadebelavista.edu.br>", "campos": [{"key": "tratamento", "label": "Forma de tratamento", "default": "Prezada"}, {"key": "primeiro_nome", "label": "Primeiro nome do candidato", "default": "Bárbara"}, {"key": "vaga", "label": "Nome da vaga", "default": "Analista Jr. de Negócios e Experiência"}, {"key": "area_2a", "label": "Área da entrevista técnica realizada", "default": "Admissões e Marketing"}, {"key": "participantes_3a", "label": "Quem participa da 3ª entrevista", "default": "o gestor da área e a Diretora Executiva da Faculdade Belavista"}, {"key": "horario", "label": "Horário proposto", "default": "Sexta-feira, dia 10 de abril — das 15h às 16h"}], "assunto": "Faculdade Belavista | {{vaga}} | Aprovação na 2ª Entrevista e Convite", "blocos": [{"tipo": "saudacao", "texto": "{{tratamento}} {{primeiro_nome}},"}, {"tipo": "paragrafo", "texto": "Temos uma boa notícia para compartilhar com você. Após a Entrevista Técnica com a Área de {{area_2a}}, você foi aprovada e avança para a próxima etapa do nosso processo seletivo para a vaga de [b]{{vaga}}[/b] da Faculdade Belavista!"}, {"tipo": "titulo", "texto": "Como está o seu processo seletivo?"}, {"tipo": "paragrafo", "texto": "Nosso processo é composto por [b]três etapas, todas de caráter eliminatório[/b]. Apenas os candidatos aprovados em cada fase avançam para a seguinte:"}, {"tipo": "etapa", "estado": "concluida", "numero": "✔", "titulo": "Entrevista com Pessoas & Cultura (online)", "descricao": "Etapa concluída. Parabéns, você foi aprovada!"}, {"tipo": "etapa", "estado": "concluida", "numero": "✔", "titulo": "Entrevista Técnica com a Área de {{area_2a}} (online)", "descricao": "Etapa concluída. Parabéns, você foi aprovada!"}, {"tipo": "etapa", "estado": "atual", "numero": "★", "titulo": "Entrevista Presencial na Faculdade Belavista", "descricao": "A etapa final acontece de forma presencial em nossa unidade em Pinheiros, São Paulo. Você irá conversar com {{participantes_3a}}."}, {"tipo": "titulo", "texto": "Como agendar a sua entrevista?"}, {"tipo": "paragrafo", "texto": "Para dar início à próxima etapa, pedimos que você responda a este e-mail confirmando sua possibilidade de comparecer no horário indicado abaixo:"}, {"tipo": "horario_unico", "rotulo": "Horário", "campo": "horario"}, {"tipo": "paragrafo", "texto": "Aguardamos o seu retorno. Em caso de dúvidas, não hesite em nos contatar respondendo a este e-mail."}, {"tipo": "paragrafo", "texto": "Atenciosamente,"}, {"tipo": "assinatura"}]}, {"id": "etapa-extra-antes-2a", "categoria": "Etapa extra (desafio)", "titulo": "Convite para etapa extra, antes da 2ª entrevista", "descricao": "Use quando o desafio é proposto entre a 1ª e a 2ª entrevista. Anexe o PDF do enunciado.", "remetente": "Pessoas e Cultura <pessoasecultura@faculdadebelavista.edu.br>", "campos": [{"key": "tratamento", "label": "Forma de tratamento", "default": "Prezada"}, {"key": "primeiro_nome", "label": "Primeiro nome do candidato", "default": "Gabriela"}, {"key": "vaga", "label": "Nome da vaga", "default": "Analista Jr. de Design Gráfico"}, {"key": "area", "label": "Área da vaga", "default": "Marketing"}, {"key": "horarios", "label": "Horários disponíveis (uma linha por opção)", "default": "Quinta-feira, 07/05\n  • entre 9h e 13h\n  • entre 15h e 18h\nSegunda-feira, 11/05\n  • entre 9h e 12h\n  • entre 16h e 18h", "multiline": true}], "assunto": "Faculdade Belavista | {{vaga}} | Convite para Etapa Extra", "blocos": [{"tipo": "saudacao", "texto": "{{tratamento}} {{primeiro_nome}},"}, {"tipo": "paragrafo", "texto": "Temos uma boa notícia para compartilhar com você. Após a Entrevista com a Área de Pessoas & Cultura, você foi aprovada e avança para a próxima etapa do nosso processo seletivo para a vaga de [b]{{vaga}}[/b] da Faculdade Belavista!"}, {"tipo": "paragrafo", "texto": "Para esta vaga, identificamos a necessidade de incluir uma [b]etapa extra[/b] no processo seletivo. Nessa etapa, será proposto um desafio prático para que você se aprofunde no papel da área. O enunciado do desafio está [b]anexado a este e-mail em PDF[/b]. Em seguida, você apresentará a sua solução a um membro da área de {{area}} que será designado pelo gestor, em uma entrevista online de 45 minutos, na qual poderão conversar sobre o que foi proposto."}, {"tipo": "titulo", "texto": "Como está o seu processo seletivo?"}, {"tipo": "etapa", "estado": "concluida", "numero": "✔", "titulo": "Entrevista com Pessoas & Cultura (online)", "descricao": "Etapa concluída. Parabéns, você foi aprovada!"}, {"tipo": "etapa", "estado": "atual", "numero": "★", "titulo": "Desafio Prático + Apresentação à Área de {{area}} (online)", "descricao": "Etapa atual. Resolva o case e apresente a sua solução em uma sessão online de 45 minutos."}, {"tipo": "etapa", "estado": "futura", "numero": "2", "titulo": "Entrevista Técnica com a Área de {{area}} (online)", "descricao": "Etapa futura. Conversa aprofundada com o gestor da área."}, {"tipo": "etapa", "estado": "futura", "numero": "3", "titulo": "Entrevista Presencial na Faculdade Belavista", "descricao": "Etapa final. Encontro presencial em nossa unidade em Pinheiros, São Paulo."}, {"tipo": "titulo", "texto": "Como agendar a sua entrevista?"}, {"tipo": "paragrafo", "texto": "Para dar início a essa etapa, pedimos que você responda a este e-mail confirmando o horário de sua preferência entre as opções disponíveis abaixo. A sessão terá duração aproximada de 45 minutos."}, {"tipo": "horarios", "rotulo": "Horários disponíveis", "linhas_campo": "horarios"}, {"tipo": "paragrafo", "texto": "Aguardamos o seu retorno. Em caso de dúvidas, não hesite em nos contatar respondendo a este e-mail."}, {"tipo": "paragrafo", "texto": "Atenciosamente,"}, {"tipo": "assinatura"}]}, {"id": "etapa-extra-pos-3a", "categoria": "Etapa extra (desafio)", "titulo": "Convite para etapa extra, após a 3ª entrevista", "descricao": "Use quando o desafio é identificado como necessário depois da entrevista presencial.", "remetente": "Pessoas e Cultura <pessoasecultura@faculdadebelavista.edu.br>", "campos": [{"key": "tratamento", "label": "Forma de tratamento", "default": "Prezada"}, {"key": "primeiro_nome", "label": "Primeiro nome do candidato", "default": "Ana Luiza"}, {"key": "vaga", "label": "Nome da vaga", "default": "Analista Jr. de Negócios e Experiência"}, {"key": "area", "label": "Área da vaga", "default": "Admissões e Marketing"}, {"key": "horarios", "label": "Horários disponíveis (uma linha por opção)", "default": "Segunda-feira, 06/04\n  • 17h30\nTerça-feira, 07/04\n  • 9h30, 14h, 14h30, 15h\nQuarta-feira, 08/04\n  • 8h30, 9h, 10h, 11h\n  • 15h, 16h, 17h, 18h", "multiline": true}], "assunto": "Faculdade Belavista | {{vaga}} | Fase Extra", "blocos": [{"tipo": "saudacao", "texto": "{{tratamento}} {{primeiro_nome}},"}, {"tipo": "paragrafo", "texto": "Após a sua Entrevista Presencial na Faculdade Belavista, identificamos a necessidade de incluir uma [b]etapa extra[/b] no processo seletivo para a vaga de [b]{{vaga}}[/b]."}, {"tipo": "paragrafo", "texto": "Nessa etapa, será proposto um desafio prático para que você se aprofunde no papel da área. O enunciado do desafio está [b]anexado a este e-mail em PDF[/b]. Em seguida, você apresentará a sua solução ao gestor da área em uma entrevista online de 45 minutos, na qual poderão conversar sobre o que foi proposto."}, {"tipo": "titulo", "texto": "Como está o seu processo seletivo?"}, {"tipo": "etapa", "estado": "concluida", "numero": "✔", "titulo": "Entrevista com Pessoas & Cultura (online)", "descricao": "Etapa concluída. Parabéns, você foi aprovada!"}, {"tipo": "etapa", "estado": "concluida", "numero": "✔", "titulo": "Entrevista Técnica com a Área de {{area}} (online)", "descricao": "Etapa concluída. Parabéns, você foi aprovada!"}, {"tipo": "etapa", "estado": "concluida", "numero": "✔", "titulo": "Entrevista Presencial na Faculdade Belavista", "descricao": "Entrevista presencial realizada. Vista a necessidade de nova fase no processo seletivo."}, {"tipo": "etapa", "estado": "atual", "numero": "★", "titulo": "Desafio Prático + Apresentação ao Gestor da Área (online)", "descricao": "Apresente a sua solução para o case proposto e converse com o gestor da área sobre o que foi desenvolvido. Sessão de 45 minutos, realizada de forma online."}, {"tipo": "titulo", "texto": "Como agendar a sua entrevista?"}, {"tipo": "paragrafo", "texto": "Para dar início a essa etapa, pedimos que você responda a este e-mail confirmando o horário de sua preferência entre as opções disponíveis abaixo. A sessão terá duração aproximada de 45 minutos."}, {"tipo": "horarios", "rotulo": "Horários disponíveis", "linhas_campo": "horarios"}, {"tipo": "paragrafo", "texto": "Aguardamos o seu retorno. Em caso de dúvidas, não hesite em nos contatar respondendo a este e-mail."}, {"tipo": "paragrafo", "texto": "Atenciosamente,"}, {"tipo": "assinatura"}]}, {"id": "recusa-triagem", "categoria": "Recusas", "titulo": "Recusa após triagem de currículos", "descricao": "Enviado para candidatos cujo currículo não avançou. Resposta padrão e respeitosa.", "remetente": "Pessoas e Cultura <pessoasecultura@faculdadebelavista.edu.br>", "campos": [{"key": "tratamento", "label": "Forma de tratamento", "default": "Prezado(a)"}, {"key": "primeiro_nome", "label": "Primeiro nome do candidato", "default": "candidato(a)"}, {"key": "vaga", "label": "Nome da vaga", "default": "Analista Jr. de Design Gráfico"}], "assunto": "Faculdade Belavista | {{vaga}} | Retorno sobre a sua candidatura", "blocos": [{"tipo": "saudacao", "texto": "{{tratamento}} {{primeiro_nome}},"}, {"tipo": "paragrafo", "texto": "Agradecemos sinceramente o envio do seu currículo e o seu interesse em fazer parte do time da Faculdade Belavista para a vaga de [b]{{vaga}}[/b]."}, {"tipo": "paragrafo", "texto": "Após uma análise cuidadosa de todas as candidaturas recebidas, optamos por seguir com outros perfis nesta etapa do processo seletivo."}, {"tipo": "paragrafo", "texto": "Gostaríamos de manter o seu currículo em nosso banco de talentos para futuras oportunidades que se alinhem ao seu perfil. Caso surjam novas vagas adequadas, entraremos em contato."}, {"tipo": "paragrafo", "texto": "Desejamos sucesso na sua trajetória profissional e agradecemos novamente pelo interesse na Faculdade Belavista."}, {"tipo": "paragrafo", "texto": "Atenciosamente,"}, {"tipo": "assinatura"}]}, {"id": "recusa-pos-entrevista", "categoria": "Recusas", "titulo": "Recusa após entrevista (1ª, 2ª ou 3ª)", "descricao": "Modelo único para qualquer uma das três entrevistas. Ajuste o campo de etapa conforme o caso.", "remetente": "Pessoas e Cultura <pessoasecultura@faculdadebelavista.edu.br>", "campos": [{"key": "tratamento", "label": "Forma de tratamento", "default": "Prezada"}, {"key": "primeiro_nome", "label": "Primeiro nome do candidato", "default": "Gabriela"}, {"key": "vaga", "label": "Nome da vaga", "default": "Analista Jr. de Design Gráfico"}, {"key": "etapa", "label": "Etapa em que ocorreu a recusa", "default": "Entrevista com a Área de Pessoas & Cultura"}], "assunto": "Faculdade Belavista | {{vaga}} | Retorno sobre o processo seletivo", "blocos": [{"tipo": "saudacao", "texto": "{{tratamento}} {{primeiro_nome}},"}, {"tipo": "paragrafo", "texto": "Agradecemos a sua participação na [b]{{etapa}}[/b] do nosso processo seletivo para a vaga de [b]{{vaga}}[/b], e o tempo dedicado para nos conhecer e compartilhar a sua trajetória."}, {"tipo": "paragrafo", "texto": "Após avaliação cuidadosa, decidimos seguir com outros candidatos nesta etapa do processo. Gostaríamos de reforçar que essa decisão considera o conjunto do processo e o alinhamento com as necessidades específicas da vaga neste momento, e não desmerece em nada o seu perfil profissional."}, {"tipo": "paragrafo", "texto": "Vamos manter o seu cadastro em nosso banco de talentos. Caso surjam novas oportunidades alinhadas ao seu perfil, entraremos em contato."}, {"tipo": "paragrafo", "texto": "Desejamos muito sucesso na sua trajetória e agradecemos novamente pelo interesse na Faculdade Belavista."}, {"tipo": "paragrafo", "texto": "Atenciosamente,"}, {"tipo": "assinatura"}]}, {"id": "aprovacao-final", "categoria": "Aprovação", "titulo": "Aprovação final e proposta", "descricao": "Enviado após a 3ª entrevista, comunicando aprovação e detalhes iniciais da contratação.", "remetente": "Pessoas e Cultura <pessoasecultura@faculdadebelavista.edu.br>", "campos": [{"key": "tratamento", "label": "Forma de tratamento", "default": "Prezada"}, {"key": "primeiro_nome", "label": "Primeiro nome do candidato", "default": "Bárbara"}, {"key": "vaga", "label": "Nome da vaga", "default": "Analista Jr. de Negócios e Experiência"}, {"key": "area", "label": "Área da vaga", "default": "Admissões e Marketing"}, {"key": "data_inicio_prevista", "label": "Data prevista de início", "default": "20 de abril"}, {"key": "prazo_retorno", "label": "Prazo para retorno do candidato", "default": "até sexta-feira, 12 de abril"}], "assunto": "Faculdade Belavista | {{vaga}} | Aprovação no Processo Seletivo", "blocos": [{"tipo": "saudacao", "texto": "{{tratamento}} {{primeiro_nome}},"}, {"tipo": "paragrafo", "texto": "Temos uma excelente notícia para compartilhar com você. Após a conclusão de todas as etapas do nosso processo seletivo, queremos comunicar que [b]você foi aprovada para a vaga de {{vaga}}[/b] na Faculdade Belavista, na área de {{area}}."}, {"tipo": "paragrafo", "texto": "Foi um prazer conhecer você ao longo do processo, e ficamos muito felizes com a perspectiva de tê-la no nosso time."}, {"tipo": "titulo", "texto": "Próximos passos"}, {"tipo": "paragrafo", "texto": "Em breve, entraremos em contato para apresentar a [b]proposta formal[/b], com todos os detalhes da contratação, benefícios e demais informações. Nossa previsão é que você possa iniciar suas atividades em [b]{{data_inicio_prevista}}[/b], alinhando a data com a sua disponibilidade."}, {"tipo": "paragrafo", "texto": "Pedimos a gentileza de confirmar o aceite preliminar respondendo a este e-mail [b]{{prazo_retorno}}[/b], para que possamos dar sequência aos trâmites de admissão."}, {"tipo": "paragrafo", "texto": "Em caso de dúvidas ou necessidade de alinhamentos prévios, fique à vontade para nos procurar."}, {"tipo": "paragrafo", "texto": "Atenciosamente,"}, {"tipo": "assinatura"}]}, {"id": "interno-gestor-pos-1a", "categoria": "Interno", "titulo": "Comunicação interna ao gestor após 1ª entrevista", "descricao": "E-mail de Pessoas e Cultura para o gestor da área com parecer e encaminhamento dos aprovados na 1ª entrevista.", "remetente": "Pessoas e Cultura <pessoasecultura@faculdadebelavista.edu.br>", "campos": [{"key": "nome_gestor", "label": "Nome do gestor", "default": "Arthur"}, {"key": "vaga", "label": "Nome da vaga", "default": "Analista Jr. de Design Gráfico"}, {"key": "qtd_aprovados", "label": "Quantos avançaram", "default": "três"}, {"key": "lista_candidatos", "label": "Lista de candidatos com observações (uma linha por candidato)", "default": "Gabriela Ruiz — perfil aderente, experiência prévia em agência, disponibilidade imediata\nLucas Mendes — bom domínio técnico, falta repertório editorial, demonstrou interesse genuíno na faculdade\nAna Beatriz — perfil mais sênior do que o desejado, vale conversar para entender pretensão", "multiline": true}, {"key": "link_drive", "label": "Link da pasta no Drive com os currículos e relatórios", "default": "https://drive.google.com/drive/folders/..."}], "assunto": "Faculdade Belavista | {{vaga}} | Aprovados na 1ª Entrevista", "blocos": [{"tipo": "saudacao", "texto": "Olá, {{nome_gestor}},"}, {"tipo": "paragrafo", "texto": "Concluímos as 1ª entrevistas para a vaga de [b]{{vaga}}[/b] e temos {{qtd_aprovados}} candidatos para encaminhar para a etapa técnica com você."}, {"tipo": "titulo", "texto": "Aprovados na 1ª entrevista"}, {"tipo": "horarios", "rotulo": "Candidatos", "linhas_campo": "lista_candidatos"}, {"tipo": "paragrafo", "texto": "Os currículos, anotações da entrevista e relatórios consolidados estão disponíveis na pasta do Drive abaixo:"}, {"tipo": "link_bookings", "url": "{{link_drive}}", "rotulo": "Abrir pasta no Drive"}, {"tipo": "titulo", "texto": "Próximos passos"}, {"tipo": "paragrafo", "texto": "Pedimos que você nos retorne com:"}, {"tipo": "paragrafo", "texto": "[b]1.[/b] Data e janela de horários disponíveis para as entrevistas técnicas, para definirmos se faz sentido criar um link de Bookings ou enviar horários no corpo do e-mail."}, {"tipo": "paragrafo", "texto": "[b]2.[/b] Indicação de quem participará da entrevista técnica, caso não seja você diretamente."}, {"tipo": "paragrafo", "texto": "[b]3.[/b] Se haverá desafio prático nesta vaga e em que momento do processo ele será proposto."}, {"tipo": "paragrafo", "texto": "Assim que tivermos esse retorno, encaminhamos os convites aos candidatos com cópia para você e para quem mais participar da entrevista."}, {"tipo": "paragrafo", "texto": "Qualquer dúvida, estamos à disposição."}, {"tipo": "paragrafo", "texto": "Atenciosamente,"}, {"tipo": "assinatura"}]}];
+
+// =========================================================
+// HELPERS
+// =========================================================
+function escapeHtml(s) {
+  return String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+}
+function escapeAttr(s) {
+  return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+}
+
+// Substitui {{campo}} dentro de uma string por valores. Retorna HTML pronto.
+// Marca campos vazios como <span class="var-empty">.
+function aplicarCampos(texto, valores, marcarVazios) {
+  let resultado = '';
+  let i = 0;
+  const re = /\{\{(\w+)\}\}/g;
+  let m;
+  while ((m = re.exec(texto)) !== null) {
+    if (m.index > i) resultado += escapeHtml(texto.slice(i, m.index));
+    const valor = valores[m[1]];
+    if (valor === undefined || valor === '') {
+      if (marcarVazios) {
+        resultado += `<span class="var-empty">{{${m[1]}}}</span>`;
+      } else {
+        resultado += `{{${m[1]}}}`;
+      }
+    } else {
+      resultado += escapeHtml(valor);
+    }
+    i = m.index + m[0].length;
+  }
+  if (i < texto.length) resultado += escapeHtml(texto.slice(i));
+  return resultado;
+}
+
+// Substitui {{campo}} dentro de uma string para valor puro (sem HTML).
+function aplicarCamposPuro(texto, valores) {
+  return texto.replace(/\{\{(\w+)\}\}/g, (m, k) => valores[k] || `{{${k}}}`);
+}
+
+// Processa marcação [b]...[/b] em uma string já com escape, gerando <b>.
+function processarNegrito(html) {
+  return html.replace(/\[b\]/g, '<b>').replace(/\[\/b\]/g, '</b>');
+}
+
+// =========================================================
+// RENDERIZADOR DA PRÉ-VISUALIZAÇÃO (HTML com classes CSS)
+// =========================================================
+function renderEmailPreview(email, valores) {
+  const partes = [];
+  email.blocos.forEach(bloco => {
+    partes.push(renderBlocoPreview(bloco, valores));
+  });
+  return `<div class="email-rendered">${partes.join('')}</div>`;
+}
+
+function renderBlocoPreview(bloco, valores) {
+  const t = bloco.tipo;
+  if (t === 'saudacao') {
+    return `<div class="er-saudacao">${processarNegrito(aplicarCampos(bloco.texto, valores, true))}</div>`;
+  }
+  if (t === 'paragrafo') {
+    return `<div class="er-paragrafo">${processarNegrito(aplicarCampos(bloco.texto, valores, true))}</div>`;
+  }
+  if (t === 'titulo') {
+    return `<div class="er-titulo">${processarNegrito(aplicarCampos(bloco.texto, valores, true))}</div>`;
+  }
+  if (t === 'etapa') {
+    const estado = bloco.estado;
+    const numHtml = escapeHtml(bloco.numero);
+    const tituloHtml = processarNegrito(aplicarCampos(bloco.titulo, valores, true));
+    const descHtml = processarNegrito(aplicarCampos(bloco.descricao, valores, true));
+    return `<div class="er-etapa">
+      <div class="er-etapa-num estado-${estado}">${numHtml}</div>
+      <div class="er-etapa-corpo estado-${estado}">
+        <div class="er-etapa-titulo estado-${estado}">${tituloHtml}</div>
+        <div class="er-etapa-desc estado-${estado}">${descHtml}</div>
+      </div>
+    </div>`;
+  }
+  if (t === 'link_bookings') {
+    const url = aplicarCamposPuro(bloco.url, valores);
+    const urlHtml = (valores && bloco.url.match(/\{\{(\w+)\}\}/) && !valores[bloco.url.match(/\{\{(\w+)\}\}/)[1]])
+      ? `<span class="var-empty">${escapeHtml(bloco.url)}</span>`
+      : escapeHtml(url);
+    return `<div class="er-link-bookings">
+      <div>
+        <span class="er-link-rotulo">${escapeHtml(bloco.rotulo)}</span>
+        <span class="er-link-arrow">→</span>
+        <a href="${escapeAttr(url)}" class="er-link-anchor">Clique para acessar</a>
+      </div>
+      <div class="er-link-fallback">Ou copie e cole o endereço no seu navegador: <i>${urlHtml}</i></div>
+    </div>`;
+  }
+  if (t === 'horarios') {
+    const linhasRaw = valores[bloco.linhas_campo] || '';
+    const linhasHtml = linhasRaw === ''
+      ? `<span class="var-empty">{{${bloco.linhas_campo}}}</span>`
+      : escapeHtml(linhasRaw);
+    return `<div class="er-horarios">
+      <div class="er-horarios-rotulo">${escapeHtml(bloco.rotulo)}</div>
+      <div class="er-horarios-linha">${linhasHtml}</div>
+    </div>`;
+  }
+  if (t === 'horario_unico') {
+    const valor = valores[bloco.campo] || '';
+    const valorHtml = valor === ''
+      ? `<span class="var-empty">{{${bloco.campo}}}</span>`
+      : escapeHtml(valor);
+    return `<div class="er-horario-unico">
+      <div class="er-horario-unico-rotulo">${escapeHtml(bloco.rotulo)}</div>
+      <div class="er-horario-unico-valor">${valorHtml}</div>
+    </div>`;
+  }
+  if (t === 'assinatura') {
+    return `<div class="er-assinatura">
+      <div><b>Pessoas e Cultura — Faculdade Belavista</b></div>
+      <div><b>(11) 3177-8400</b></div>
+    </div>`;
+  }
+  return '';
+}
+
+// =========================================================
+// RENDERIZADOR DO HTML PARA COPIAR (estilos inline, compatível com Outlook)
+// =========================================================
+function renderEmailParaOutlook(email, valores) {
+  // Estilos inline em cada elemento. O Outlook ignora <style> em <head>,
+  // então a única forma confiável é inline.
+  const FONT = `font-family: "Avenir Next", Arial, Helvetica, sans-serif`;
+  const COR_TXT = `color: rgb(68, 68, 68)`;
+  const COR_AZUL = `color: rgb(27, 58, 107)`;
+  const COR_VERDE = `color: rgb(34, 116, 64)`;
+  const COR_CINZA = `color: rgb(102, 102, 102)`;
+
+  const partes = [];
+
+  email.blocos.forEach(bloco => {
+    partes.push(renderBlocoOutlook(bloco, valores));
+  });
+
+  return partes.join('\n');
+}
+
+function renderBlocoOutlook(bloco, valores) {
+  const FONT = `font-family: &quot;Avenir Next&quot;, Arial, Helvetica, sans-serif`;
+  const t = bloco.tipo;
+
+  if (t === 'saudacao') {
+    const texto = processarNegrito(aplicarCampos(bloco.texto, valores, false));
+    return `<p style="margin: 0 0 6pt; ${FONT}; font-size: 12pt; color: rgb(27, 58, 107);"><b>${texto}</b></p>`;
+  }
+
+  if (t === 'paragrafo') {
+    const texto = processarNegrito(aplicarCampos(bloco.texto, valores, false));
+    return `<p style="margin: 0 0 6pt; ${FONT}; font-size: 11pt; color: rgb(68, 68, 68);">${texto}</p>`;
+  }
+
+  if (t === 'titulo') {
+    const texto = processarNegrito(aplicarCampos(bloco.texto, valores, false));
+    return `<p style="margin: 8pt 0 4pt; ${FONT}; font-size: 11.5pt; color: rgb(27, 58, 107);"><b>${texto}</b></p>`;
+  }
+
+  if (t === 'etapa') {
+    const estado = bloco.estado;
+    let bgNum, bgCorpo, corTitulo, corDesc, fontSizeNum;
+    if (estado === 'concluida') {
+      bgNum = 'rgb(34, 116, 64)'; bgCorpo = 'rgb(232, 244, 234)';
+      corTitulo = 'rgb(34, 116, 64)'; corDesc = 'rgb(34, 116, 64)';
+      fontSizeNum = '14pt';
+    } else if (estado === 'atual') {
+      bgNum = 'rgb(27, 58, 107)'; bgCorpo = 'rgb(238, 244, 252)';
+      corTitulo = 'rgb(27, 58, 107)'; corDesc = 'rgb(27, 58, 107)';
+      fontSizeNum = '13pt';
+    } else if (estado === 'futura') {
+      bgNum = 'rgb(140, 140, 140)'; bgCorpo = 'rgb(245, 245, 245)';
+      corTitulo = 'rgb(102, 102, 102)'; corDesc = 'rgb(102, 102, 102)';
+      fontSizeNum = '13pt';
+    } else { // padrao
+      bgNum = 'rgb(27, 58, 107)'; bgCorpo = 'rgb(245, 247, 250)';
+      corTitulo = 'rgb(27, 58, 107)'; corDesc = 'rgb(68, 68, 68)';
+      fontSizeNum = '13pt';
+    }
+    const numHtml = escapeHtml(bloco.numero);
+    const tituloHtml = processarNegrito(aplicarCampos(bloco.titulo, valores, false));
+    const descHtml = processarNegrito(aplicarCampos(bloco.descricao, valores, false));
+
+    // Usa tabela para máxima compatibilidade com Outlook
+    return `<table cellspacing="0" cellpadding="0" style="border-collapse: collapse; border-spacing: 0; width: 100%; margin-bottom: 4pt;">
+<tr>
+<td style="background-color: ${bgNum}; padding: 6pt 8pt; vertical-align: middle; width: 28pt; text-align: center;">
+<span style="${FONT}; font-size: ${fontSizeNum}; color: white;"><b>${numHtml}</b></span>
+</td>
+<td style="background-color: ${bgCorpo}; padding: 6pt 8pt 6pt 12pt; vertical-align: middle;">
+<p style="margin: 0 0 1pt; ${FONT}; font-size: 10.5pt; color: ${corTitulo};"><b>${tituloHtml}</b></p>
+<p style="margin: 0; ${FONT}; font-size: 10pt; color: ${corDesc};">${descHtml}</p>
+</td>
+</tr>
+</table>`;
+  }
+
+  if (t === 'link_bookings') {
+    const url = aplicarCamposPuro(bloco.url, valores);
+    return `<table cellspacing="0" cellpadding="0" style="border-collapse: collapse; border-spacing: 0; width: 100%; margin: 6pt 0 8pt;">
+<tr>
+<td style="background-color: rgb(238, 244, 252); border-left: 3px solid rgb(27, 58, 107); border-top: 1px solid rgb(197, 216, 240); border-right: 1px solid rgb(197, 216, 240); border-bottom: 1px solid rgb(197, 216, 240); padding: 8pt 15pt; vertical-align: top;">
+<p style="margin: 0 0 3pt; ${FONT}; font-size: 10.5pt; color: rgb(27, 58, 107);"><b>${escapeHtml(bloco.rotulo)} →&nbsp;</b><a href="${escapeAttr(url)}" style="color: rgb(150, 96, 125); text-decoration: underline;"><b>Clique para acessar</b></a></p>
+<p style="margin: 0; ${FONT}; font-size: 9pt; color: rgb(102, 102, 102);">Ou copie e cole o endereço no seu navegador: <i>${escapeHtml(url)}</i></p>
+</td>
+</tr>
+</table>`;
+  }
+
+  if (t === 'horarios') {
+    const linhas = (valores[bloco.linhas_campo] || '').split('\n');
+    const linhasHtml = linhas.map(l => escapeHtml(l)).join('<br>');
+    return `<table cellspacing="0" cellpadding="0" style="border-collapse: collapse; border-spacing: 0; width: 100%; margin: 6pt 0 8pt;">
+<tr>
+<td style="background-color: rgb(245, 247, 250); border-left: 3px solid rgb(27, 58, 107); padding: 8pt 15pt; vertical-align: top;">
+<p style="margin: 0 0 4pt; ${FONT}; font-size: 10.5pt; color: rgb(27, 58, 107);"><b>${escapeHtml(bloco.rotulo)}</b></p>
+<p style="margin: 0; ${FONT}; font-size: 10.5pt; color: rgb(68, 68, 68); line-height: 1.5;">${linhasHtml}</p>
+</td>
+</tr>
+</table>`;
+  }
+
+  if (t === 'horario_unico') {
+    const valor = valores[bloco.campo] || '';
+    return `<table cellspacing="0" cellpadding="0" style="border-collapse: collapse; border-spacing: 0; width: 100%; margin: 6pt 0 8pt;">
+<tr>
+<td style="background-color: rgb(245, 247, 250); border-left: 3px solid rgb(27, 58, 107); padding: 8pt 15pt; vertical-align: top;">
+<p style="margin: 0 0 2pt; ${FONT}; font-size: 10.5pt; color: rgb(27, 58, 107);"><b>${escapeHtml(bloco.rotulo)}</b></p>
+<p style="margin: 0; ${FONT}; font-size: 10.5pt; color: rgb(68, 68, 68);">${escapeHtml(valor)}</p>
+</td>
+</tr>
+</table>`;
+  }
+
+  if (t === 'assinatura') {
+    return `<p style="margin: 14pt 0 0; ${FONT}; font-size: 10pt; color: black;"><b>Pessoas e Cultura — Faculdade Belavista</b></p>
+<p style="margin: 0; ${FONT}; font-size: 10pt; color: black;"><b>(11)&nbsp;3177-8400</b></p>`;
+  }
+
+  return '';
+}
+
+// Versão texto puro do e-mail (para o botão "copiar como texto")
+function renderEmailParaTexto(email, valores) {
+  const partes = [];
+  email.blocos.forEach(bloco => {
+    const t = bloco.tipo;
+    if (t === 'saudacao') {
+      partes.push(aplicarCamposPuro(bloco.texto, valores).replace(/\[\/?b\]/g, ''));
+      partes.push('');
+    } else if (t === 'paragrafo') {
+      partes.push(aplicarCamposPuro(bloco.texto, valores).replace(/\[\/?b\]/g, ''));
+      partes.push('');
+    } else if (t === 'titulo') {
+      partes.push(aplicarCamposPuro(bloco.texto, valores).replace(/\[\/?b\]/g, ''));
+    } else if (t === 'etapa') {
+      const num = bloco.numero;
+      const titulo = aplicarCamposPuro(bloco.titulo, valores).replace(/\[\/?b\]/g, '');
+      const desc = aplicarCamposPuro(bloco.descricao, valores).replace(/\[\/?b\]/g, '');
+      partes.push(`${num} ${titulo}`);
+      partes.push(`   ${desc}`);
+      partes.push('');
+    } else if (t === 'link_bookings') {
+      const url = aplicarCamposPuro(bloco.url, valores);
+      partes.push(`${bloco.rotulo} → ${url}`);
+      partes.push('');
+    } else if (t === 'horarios') {
+      const linhas = valores[bloco.linhas_campo] || '';
+      partes.push(`${bloco.rotulo}:`);
+      partes.push(linhas);
+      partes.push('');
+    } else if (t === 'horario_unico') {
+      partes.push(`${bloco.rotulo}: ${valores[bloco.campo] || ''}`);
+      partes.push('');
+    } else if (t === 'assinatura') {
+      partes.push('Pessoas e Cultura — Faculdade Belavista');
+      partes.push('(11) 3177-8400');
+    }
+  });
+  return partes.join('\n');
+}
+
+// =========================================================
+// MONTA A INTERFACE DOS MODELOS
+// =========================================================
+function renderEmails() {
+  const lista = document.getElementById('emails-lista');
+  lista.innerHTML = EMAILS.map(email => {
+    const camposHtml = email.campos.map(c => {
+      const fullwidth = c.multiline ? ' fullwidth' : '';
+      const input = c.multiline
+        ? `<textarea data-email="${email.id}" data-key="${c.key}">${escapeHtml(c.default)}</textarea>`
+        : `<input type="text" data-email="${email.id}" data-key="${c.key}" value="${escapeAttr(c.default)}">`;
+      return `<div class="campo-bloco${fullwidth}">
+        <label>${escapeHtml(c.label)}</label>
+        ${input}
+      </div>`;
+    }).join('');
+
+    return `<div class="email-card" id="email-${email.id}">
+      <div class="email-header" onclick="toggleEmail('${email.id}')">
+        <span class="email-categoria">${escapeHtml(email.categoria)}</span>
+        <span class="email-titulo">${escapeHtml(email.titulo)}</span>
+        <svg class="email-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="email-body">
+        <p class="email-descricao">${escapeHtml(email.descricao)}</p>
+
+        <div class="email-section-title">Campos editáveis</div>
+        <div class="campos-grid">${camposHtml}</div>
+
+        <div class="email-section-title">Pré-visualização (formatada como vai chegar no e-mail)</div>
+        <div class="email-meta">
+          <div class="email-meta-linha">
+            <span class="email-meta-label">De:</span>
+            <span class="email-meta-valor">${escapeHtml(email.remetente)}</span>
+          </div>
+          <div class="email-meta-linha">
+            <span class="email-meta-label">Assunto:</span>
+            <span class="email-meta-valor" id="assunto-${email.id}"></span>
+          </div>
+        </div>
+        <div class="email-preview-wrapper" id="preview-${email.id}"></div>
+
+        <div class="email-acoes">
+          <button class="btn btn-primary" onclick="copiarEmailFormatado('${email.id}')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            Copiar e-mail formatado
+          </button>
+          <button class="btn" onclick="copiarAssunto('${email.id}')">Copiar assunto</button>
+          <button class="btn" onclick="copiarTexto('${email.id}')">Copiar como texto puro</button>
+          <button class="btn" onclick="resetarCampos('${email.id}')">Resetar campos</button>
+          <span class="btn-feedback" id="feedback-${email.id}"></span>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // Listeners para atualizar preview em tempo real
+  document.querySelectorAll('input[data-email], textarea[data-email]').forEach(input => {
+    input.addEventListener('input', () => {
+      atualizarPreview(input.dataset.email);
+    });
+  });
+
+  EMAILS.forEach(e => atualizarPreview(e.id));
+  document.getElementById('emails-contador').textContent = `${EMAILS.length} modelos`;
+}
+
+function getCamposValores(emailId) {
+  const valores = {};
+  document.querySelectorAll(`[data-email="${emailId}"]`).forEach(el => {
+    valores[el.dataset.key] = el.value;
+  });
+  return valores;
+}
+
+function atualizarPreview(emailId) {
+  const email = EMAILS.find(e => e.id === emailId);
+  if (!email) return;
+  const valores = getCamposValores(emailId);
+  // Assunto
+  const assuntoHtml = aplicarCampos(email.assunto, valores, true);
+  document.getElementById(`assunto-${emailId}`).innerHTML = assuntoHtml;
+  // Corpo
+  const corpoHtml = renderEmailPreview(email, valores);
+  document.getElementById(`preview-${emailId}`).innerHTML = corpoHtml;
+}
+
+function toggleEmail(emailId) {
+  document.getElementById(`email-${emailId}`).classList.toggle('aberto');
+}
+
+// =========================================================
+// COPIA: HTML formatado, texto puro, ou apenas assunto
+// =========================================================
+async function copiarEmailFormatado(emailId) {
+  const email = EMAILS.find(e => e.id === emailId);
+  const valores = getCamposValores(emailId);
+  const html = renderEmailParaOutlook(email, valores);
+  const texto = renderEmailParaTexto(email, valores);
+
+  try {
+    // API moderna: clipboard.write com tipo text/html
+    if (navigator.clipboard && window.ClipboardItem) {
+      const blobHtml = new Blob([html], { type: 'text/html' });
+      const blobText = new Blob([texto], { type: 'text/plain' });
+      const item = new ClipboardItem({
+        'text/html': blobHtml,
+        'text/plain': blobText
+      });
+      await navigator.clipboard.write([item]);
+      mostrarFeedback(emailId, 'E-mail formatado copiado! Cole no Outlook.');
+      return;
+    }
+  } catch (err) {
+    // Cai para o fallback abaixo
+    console.warn('Clipboard API falhou, usando fallback:', err);
+  }
+
+  // Fallback: usa execCommand criando elemento temporário
+  const div = document.createElement('div');
+  div.contentEditable = 'true';
+  div.innerHTML = html;
+  div.style.position = 'fixed';
+  div.style.left = '-9999px';
+  document.body.appendChild(div);
+  const range = document.createRange();
+  range.selectNodeContents(div);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  document.execCommand('copy');
+  sel.removeAllRanges();
+  document.body.removeChild(div);
+  mostrarFeedback(emailId, 'E-mail formatado copiado! Cole no Outlook.');
+}
+
+function copiarTexto(emailId) {
+  const email = EMAILS.find(e => e.id === emailId);
+  const valores = getCamposValores(emailId);
+  const texto = renderEmailParaTexto(email, valores);
+  navigator.clipboard.writeText(texto).then(() => {
+    mostrarFeedback(emailId, 'Texto puro copiado!');
+  });
+}
+
+function copiarAssunto(emailId) {
+  const email = EMAILS.find(e => e.id === emailId);
+  const valores = getCamposValores(emailId);
+  const assunto = aplicarCamposPuro(email.assunto, valores);
+  navigator.clipboard.writeText(assunto).then(() => {
+    mostrarFeedback(emailId, 'Assunto copiado!');
+  });
+}
+
+function resetarCampos(emailId) {
+  const email = EMAILS.find(e => e.id === emailId);
+  email.campos.forEach(c => {
+    const el = document.querySelector(`[data-email="${emailId}"][data-key="${c.key}"]`);
+    if (el) el.value = c.default;
+  });
+  atualizarPreview(emailId);
+  mostrarFeedback(emailId, 'Campos restaurados');
+}
+
+function mostrarFeedback(emailId, msg) {
+  const el = document.getElementById(`feedback-${emailId}`);
+  el.textContent = msg;
+  el.classList.add('visible');
+  clearTimeout(el._timeout);
+  el._timeout = setTimeout(() => el.classList.remove('visible'), 2500);
+}
+
+// =========================================================
+// BUSCA
+// =========================================================
+function setupBusca() {
+  const input = document.getElementById('email-busca');
+  if (!input) return;
+  input.addEventListener('input', () => {
+    const termo = input.value.toLowerCase().trim();
+    let visiveis = 0;
+    EMAILS.forEach(email => {
+      const card = document.getElementById(`email-${email.id}`);
+      const match = !termo ||
+        email.titulo.toLowerCase().includes(termo) ||
+        email.categoria.toLowerCase().includes(termo) ||
+        email.descricao.toLowerCase().includes(termo);
+      card.classList.toggle('hidden', !match);
+      if (match) visiveis++;
+    });
+    document.getElementById('emails-contador').textContent =
+      termo ? `${visiveis} de ${EMAILS.length}` : `${EMAILS.length} modelos`;
+  });
+}
+
+// =========================================================
+// NAVEGAÇÃO ATIVA NO MENU
+// =========================================================
+function setupNavAtiva() {
+  const links = document.querySelectorAll('.sidebar nav a');
+  const secoes = document.querySelectorAll('.main section');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        links.forEach(a => {
+          a.classList.toggle('active', a.getAttribute('href') === `#${id}`);
+        });
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  secoes.forEach(s => observer.observe(s));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderEmails();
+  setupBusca();
+  setupNavAtiva();
+});
+</script>
+
+</body>
+</html>
